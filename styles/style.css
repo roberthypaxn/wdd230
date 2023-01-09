@@ -1,8 +1,7 @@
-*{
-    border: 2px solid red;
-}
 html{
     background-color: #e5f4e3;
+    padding-top: 10%;
+    padding-bottom: 30%;
 }
 body{
     width: 900px;
