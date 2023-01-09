@@ -1,2 +1,2 @@
-const text = new Date();
-document.getElementById("date").innerHTML = text;
+let lastModified = new Date(document.lastModified);
+alert(lastModified)
