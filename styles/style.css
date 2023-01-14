@@ -31,6 +31,10 @@ li{
     font-size: larger;
 }
 h2, p{text-align: center;}
+<<<<<<< HEAD
 li, p{
+=======
+p{
+>>>>>>> 8853f9a851fc4a41594c81a16f1d7054304cf62d
     font-family: 'Space Mono', monospace;
 }
