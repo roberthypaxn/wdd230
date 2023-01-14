@@ -9,6 +9,9 @@ body{
     margin: 0 auto;
     width: 80vw;
 }
+h2{
+    text-align: center;
+}
 header{
     text-align: center;
 }
