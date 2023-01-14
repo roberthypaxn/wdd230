@@ -10,6 +10,9 @@ body{
     border: 3px dashed black;
     font-family: 'Courier New', Courier, monospace;
 }
+img{
+    width:30%;
+}
 header{
     display: flex;
     flex-direction: row-reverse;
@@ -21,4 +24,13 @@ header{
     padding: 0.5em;
     background-color: black;
 }
+ul{
+    padding: 2.5em;
+}
+li{
+    font-size: larger;
+}
 h2, p{text-align: center;}
+p{
+    font-family: 'Space Mono', monospace;
+}
