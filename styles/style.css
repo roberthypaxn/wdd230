@@ -21,4 +21,13 @@ header{
     padding: 0.5em;
     background-color: black;
 }
+ul{
+    padding: 2.5em;
+}
+li{
+    font-size: larger;
+}
 h2, p{text-align: center;}
+p{
+    font-family: 'Space Mono', monospace;
+}
