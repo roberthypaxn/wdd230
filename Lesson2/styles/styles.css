@@ -28,3 +28,7 @@ main{
     justify-content: center;
     flex-wrap: wrap;
 }
+figure{
+    background-color: #d9ed92;
+    padding: 1em;
+}
