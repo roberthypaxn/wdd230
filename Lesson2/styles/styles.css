@@ -22,6 +22,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 4px dashed white;
 }
 main{
     display: flex;
@@ -31,4 +32,5 @@ main{
 figure{
     background-color: #d9ed92;
     padding: 1em;
+    border: 4px dashed white;
 }
