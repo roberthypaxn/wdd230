@@ -11,6 +11,7 @@ body{
 }
 h2{
     text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
 }
 header{
     width: 400px;
@@ -46,6 +47,18 @@ p{
     width: 450px;
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+figcaption{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: medium;
+}
+a{
+    color: #1b4332;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 .description-3{
     width: 700px;
