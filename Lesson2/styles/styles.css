@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    background-color: #99d98c;
+}
 header{
     text-align: center;
 }
