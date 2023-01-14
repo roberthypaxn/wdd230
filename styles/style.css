@@ -18,6 +18,7 @@ header{
     gap: 1rem;
     border: 3px dashed black;
     color: white;
+    padding: 0.5em;
     background-color: black;
 }
 h2, p{text-align: center;}
