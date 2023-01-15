@@ -26,7 +26,8 @@ header{
     border: 4px dashed white;
 }
 main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -38,7 +39,7 @@ figure{
 footer{
     text-align: center;
     background-color: #d9ed92;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     border: 4px dashed white;
 }
@@ -60,7 +61,24 @@ a{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
-.description-3{
+section>p{
+    margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 800px) {
+    #replace {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(../images/Hicks_law.png) no-repeat;
+    }
+    .description-3 {
     width: 700px;
     margin-bottom: 40px;
+    }
 }
