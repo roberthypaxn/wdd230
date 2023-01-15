@@ -1,0 +1,12 @@
+@media (min-width: 800px) {
+    #replace {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(../images/Hicks_law.png) no-repeat;
+    }
+    .description-3 {
+    width: 700px;
+    margin-bottom: 40px;
+    }
+}
