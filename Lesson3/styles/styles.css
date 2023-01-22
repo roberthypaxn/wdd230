@@ -1,20 +1,36 @@
+*{
+  //  border: 1.5px solid red;
+}
 header{
     display: flex;
     justify-content: space-between;
+    background-color: #F2E2D2;
 }
 header ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
+    padding-bottom: 2.6em;
+    align-items: center;
 }
 header a{
     padding: 2em;
+    text-decoration: none;
+    color: #46B1C9;
+    font-size: large;
 }
 header div{
     display: flex;
     gap: 2em;
     height: 6em;
     padding-left: 3em;
+}
+header h3{
+    align-self: center;
+}
+main{
+    width:70%;
+    margin: 0 auto;
 }
