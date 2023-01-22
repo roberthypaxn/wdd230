@@ -1,5 +1,9 @@
 *{
-  //  border: 1.5px solid red;
+    box-sizing: border-box;
+    /*border: 2px solid red;*/
+}
+body{
+    margin: 0;
 }
 header{
     display: flex;
@@ -33,4 +37,11 @@ header h3{
 main{
     width:70%;
     margin: 0 auto;
+}
+footer{
+    text-align: center;
+    background-color: #F2E2D2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
 }
