@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 2em;
+}
+header a{
+    padding: 2em;
+}
+header div{
+    display: flex;
+    gap: 2em;
+    height: 6em;
+    padding-left: 3em;
+}
