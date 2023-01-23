@@ -54,6 +54,10 @@ header div{
     height: 6em;
     padding-left: 3em;
 }
+header img {
+    object-fit: contain;
+    image-rendering: pixelated;
+}
 header h3{
     align-self: center;
 }
@@ -105,4 +109,57 @@ footer{
 nav a:hover {
     background-color: #46B1C9;
     color: #000000;
+}
+@media only screen and (max-width: 82rem) {
+    header {
+        flex-direction: column;
+        text-align: left;
+        gap: 2px;
+    }
+    header div{
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        width: 100%;
+    }
+    header img{
+        width: 100px;
+    }
+    
+    nav ul {
+        justify-content: space-around;
+    }
+    nav a {
+        padding: 2rem;
+    }
+    main {
+        max-width: 77.5rem;
+    }
+}
+@media only screen and (max-width: 25rem){
+    header ul{
+        flex-direction: column;
+        gap: .5em;
+        align-items: center;
+        justify-content: center;
+    }
+    header li{
+        border:2px solid black ;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }*/
+    nav a{
+        width: 100%;
+        padding: 5px;
+    }
+    nav a:hover{
+        background-color: none;
+    }
+    .container p{
+        height: 80px;
+        text-align: center;
+    }
 }
