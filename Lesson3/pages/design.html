@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="../images/logo.png">
-        <h3>Virunga Chamber of Commerce</h3>
+        <div>
+            <img src="../images/logo.png">
+            <h3>Virunga Chamber of Commerce</h3>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="target-audience.html">Target Audience</a></li>
-                <li><a href="design.html">Design</a></li>
+                <li><a href="../pages/target-audience.html">Target Audience</a></li>
+                <li><a href="../pages/design.html">Design</a></li>
             </ul>
         </nav>
     </header>
+ 
     <main>
-        <section>
+        <h2 id="col">Colors:</h2>
+        <section class="container">
             <div>
                 <p>Primary Color</p>
                 <p>Secondary Color/Link Color</p>
@@ -27,13 +32,13 @@
                 <p>Text on Dark Background</p>
             </div>
             <div>
-                <p>#F2E2D2</p>
-                <p>#46B1C9</p>
-                <p>#282828</p>
-                <p>#FFFFFF</p>
+                <p id="primec">#F2E2D2</p>
+                <p id="secondc">#46B1C9</p>
+                <p id="fontc">#000000</p>
+                <p id="darkc">#FFFFFF</p>
             </div>
         </section>
-        <section>
+        <section class="sec">
             <h2>Typography</h2>
             <h3>Heading Font: Noto Serif, serif</h3>
             <h1>Heading 1 Example [2.5rem / 40px]</h1>
@@ -60,6 +65,5 @@
         <p class="copyright">&copy; 2023 &#8224; Robert Hypax NDIRAMIYE &#8224; Kigali, Rwanda</p>
         <p>Last Modified: <span id="date"></span></p>
     </footer>
-    <p>typography, colorschema</p>
 </body>
 </html>
