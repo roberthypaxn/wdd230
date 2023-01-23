@@ -21,6 +21,10 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
+a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
 body{
     margin: 0;
 }
@@ -42,7 +46,6 @@ header a{
     padding: 2em;
     text-decoration: none;
     color: #46B1C9;
-    font-size: large;
 }
 header div{
     display: flex;
