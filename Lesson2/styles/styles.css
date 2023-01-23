@@ -7,7 +7,7 @@ html{
 body{
     padding: 10px;
     margin: 0 auto;
-    width: 80vw;
+    width: 99%;
 }
 h2{
     text-align: center;
@@ -29,12 +29,15 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    flex-wrap: wrap;
 }
 figure{
     background-color: #d9ed92;
     padding: 1em;
     border: 4px dashed white;
+}
+img{
+    width: 99%;
+    margin: 0 auto;
 }
 footer{
     text-align: center;
@@ -63,4 +66,12 @@ a{
 }
 section>p{
     margin-bottom: 40px;
+}
+@media only screen and (min-width: 1400px){
+    #replace{
+        display: none;
+    }
+    main{
+        height: 110rem;
+    }
 }

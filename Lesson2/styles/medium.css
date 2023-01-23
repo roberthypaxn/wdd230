@@ -1,12 +1,48 @@
-@media only screen and (min-width: 800px) {
-    #replace {
-        display: block;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        background: url(../images/Hicks_law.png) no-repeat;
+@media only screen and (max-width: 1400px){
+    #replace1 {
+        display:none
     }
     .description-3 {
     width: 700px;
     margin-bottom: 40px;
     }
+    header{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: #d9ed92;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 4px dashed white;
+    }
+    main{
+        height: 200rem;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+      "header header1"
+      "footer footer";
+    }
+    #item1{
+        grid-area: header;
+    }
+    #item2{
+        grid-area: header1;
+    }
+    #item3{
+        grid-area: footer;
+    }
+    #item3 #replace{
+        width: 99%;
+        margin: 0 auto;
+    }
+    body{
+        margin: 0;
+        width: 99%;
+    }
+    
 }

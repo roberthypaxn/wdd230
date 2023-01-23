@@ -1,6 +1,48 @@
-@media only screen and (min-width: 500px) {
-    main {
-        display: grid;
+@media only screen and (max-width: 400px){
+    *{
+        border: 2px solid red;
+    }
+    #replace{
+        display: none;
+    }
+    header{
+        width: 340px;
+        height: 340px;
+        border-radius: 50%;
+        background-color: #d9ed92;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 4px dashed white;
+    }
+    p{
+        margin: 0 auto;
+        width: 300px;
+    }
+    main{
+        height: 255rem;
+        width: 95%;
         grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    body{
+        width: 98%;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
+        image-rendering: pixelated;
+        margin: 0 auto;
+    }
+    figure{
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer{
+        width: 100%;
     }
 }
