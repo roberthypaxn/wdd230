@@ -38,10 +38,46 @@ main{
     width:70%;
     margin: 0 auto;
 }
+main #col{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
 footer{
     text-align: center;
     background-color: #F2E2D2;
     width: 100%;
     margin: 0 auto;
     padding: 1em;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+.container p{
+    border: 2px solid black;
+    margin: 0;
+    padding: 1.2em;
+}
+#primec{
+    background-color: #F2E2D2;
+}
+#secondc{
+    background-color: #46B1C9;
+}
+#fontc{
+    background-color: #000000;
+    color: white;
+}
+#darkc{
+    background-color: #ffffff;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
 }
