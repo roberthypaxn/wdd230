@@ -1,4 +1,4 @@
-@media  only screen and (min-width: 32.5em) {
+@media  only screen and (max-width: 32.5em) {
     header{
         display: flex;
         flex-direction: column;
@@ -8,7 +8,7 @@
         padding: 0.5em;
     }
     body{
-        width: 550px;
+        width: 95%;
     }
     img{
         width:50%;
