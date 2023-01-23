@@ -1,14 +1,14 @@
-@media only screen and (max-width: 400px){
-    *{
-        border: 2px solid red;
-    }
+@media only screen and (500px >= width){
     #replace{
         display: none;
     }
+    #replace1{
+        display: block;
+    }
     header{
-        width: 340px;
-        height: 340px;
-        border-radius: 50%;
+        width: 97%;
+        height: 300px;
+        border-radius: 0%;
         background-color: #d9ed92;
         margin: 0 auto;
         display: flex;
@@ -18,18 +18,32 @@
         border: 4px dashed white;
     }
     p{
+        width: 80%;
         margin: 0 auto;
-        width: 300px;
+        padding: 10px;        
     }
     main{
-        height: 255rem;
+        height: auto;
         width: 95%;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         margin: 0 auto;
+        grid-template-areas:
+        "head"
+        "main"
+        "footer";
+    }
+    #item1{
+        grid-area: head;
+    }
+    #item2{
+        grid-area: main;
+    }
+    #item3{
+        grid-area: footer;
     }
     body{
-        width: 98%;
+        width: 100%;
         margin: 0 auto;
     }
     img{
@@ -39,10 +53,14 @@
         margin: 0 auto;
     }
     figure{
-        width: 100%;
+        width: 99%;
         margin: 0 auto;
     }
     footer{
         width: 100%;
+    }
+    .description-3 {
+        width: 80%;
+        margin-bottom: 20px;
     }
 }

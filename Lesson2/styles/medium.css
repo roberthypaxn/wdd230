@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1400px){
+@media only screen and ( max-width: 1400px){
     #replace1 {
         display:none
     }
@@ -6,19 +6,7 @@
     width: 700px;
     margin-bottom: 40px;
     }
-    header{
-        width: 400px;
-        height: 400px;
-        border-radius: 50%;
-        background-color: #d9ed92;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 4px dashed white;
-    }
-    main{
+    main{/*this does damage to small.css*/
         height: 200rem;
         width: 100%;
         grid-template-columns: 1fr 1fr;
