@@ -67,7 +67,7 @@ a{
 section>p{
     margin-bottom: 40px;
 }
-@media only screen and (min-width: 125rem){
+@media only screen and (min-width: 118.99rem){
     #replace{
         display: none;
     }
