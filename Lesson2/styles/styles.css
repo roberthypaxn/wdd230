@@ -67,11 +67,12 @@ a{
 section>p{
     margin-bottom: 40px;
 }
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 125rem){
     #replace{
         display: none;
     }
-    main{
-        height: 110rem;
+    footer p{
+        width: auto;
+        padding: 1rem;
     }
 }

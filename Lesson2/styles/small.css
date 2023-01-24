@@ -1,4 +1,4 @@
-@media only screen and (500px >= width){
+@media only screen and (42rem >= width){
     #replace{
         display: none;
     }
@@ -28,6 +28,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         margin: 0 auto;
+        grid-gap: 3px;
         grid-template-areas:
         "head"
         "main"
@@ -58,6 +59,10 @@
     }
     footer{
         width: 100%;
+    }
+    #big-pic{
+        width: 99%;
+        margin: 0 auto;
     }
     .description-3 {
         width: 80%;
