@@ -1,0 +1,45 @@
+@media only screen and ( max-width: 119.99rem){
+    #navigation{
+        display: none;
+    }
+    .media{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        gap: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+    header > section{
+        justify-content: space-evenly;
+    }
+    
+    main{
+        height: 160vh;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "call-to-act call-to-act"
+        "news news"
+        "spotlight spotlight"
+        "join join"
+        "event weather";
+    }
+    #spotlights{
+        flex-direction: row;
+    }
+    #spot1, #spot2{
+        width: 100%;
+    }
+    #spot3{
+        display: none;
+    }
+    footer section{
+        align-items: center;
+    }
+    .logo{
+        width: 48%;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+}

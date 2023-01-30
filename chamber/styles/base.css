@@ -1,0 +1,69 @@
+@media only screen and (42rem >= width){
+    
+    header{
+        width: 97%;
+        border-radius: 0%;
+        margin: 0 auto;
+        align-items: center;
+    }
+   
+   
+    header img{
+        width: 50%;
+        object-fit: contain;
+        image-rendering: pixelated;
+        margin: 0 auto;
+    }
+    body{
+        width: 95%;
+        margin: 0 auto;
+    }
+    main{
+        height: 160vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "call-to-act"
+        "event"
+        "weather"
+        "news"
+        "spotlight";
+    }
+    #join{
+        display: none;
+    }
+    footer{
+        background-color: #F2E2D2;
+        color: #023047;
+    }
+    footer > section{
+        display: flex;
+        justify-content: auto;
+        flex-direction: column;
+    }
+
+    footer img{
+        width: 50%;
+        height: 50%;
+    }
+    header .date{
+        width: 90%;
+    }
+    .logo{
+        align-items: stretch;
+        gap: 0.4em;
+    }
+    .fa {
+        padding: 12px;
+        font-size: 15px;
+        width: 15px;
+        height: 10px;
+        margin: 1px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+    .media{
+        padding: 0.4em;
+    }
+}

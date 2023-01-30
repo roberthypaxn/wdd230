@@ -1,16 +1,11 @@
-
-*{
-	border: 2px solid red;
-	padding: 4px;
-}
 body{
-	width: 60vw;
+	width: 80vw;
 	margin: 0 auto;
 }
 header{
 	display: flex;
 	flex-direction: column;
-	background-color: #d6b257;
+	background-color: #F2E2D2;
 	color: #023047;
 }
 header ul{
@@ -34,11 +29,12 @@ header > section{
 header .date{
 	text-align: center;
 	background-color: #8ecae6;
+	border: 2px solid white;
 	padding: 1em;
 	width: 95%;
 	margin: 0 auto;
 }
-nav{
+#navigation{
     height: 100%;
 }
 .media{
@@ -74,29 +70,38 @@ main{
 }
 #event{
 	grid-area: event;
+	background-color:darkkhaki;
 }
 #call-to-act{
 	grid-area: call-to-act;
+	background-color: darkkhaki;
 }
 #weather{
 	grid-area: weather;
+	background-color: darkkhaki;
 }
 #join{
 	grid-area: join;
+	background-color: darkkhaki;
 }
 #news{
 	grid-area: news;
+	background-color: darkkhaki;
 }
 #spotlights{
 	grid-area: spotlight;
 	display: flex;
 	flex-direction: column;
+	background-color: darkkhaki;
+}
+#spot1, #spot2{
+	border: 2px solid white;
 }
 article div{
 	height: 100%;
 }
 footer{
-	background-color: #d6b257;
+	background-color: #F2E2D2;
 	color: #023047;
 }
 footer > section{
@@ -105,11 +110,13 @@ footer > section{
 }
 footer .copyright{
 	text-align: center;
-	border-top: 2px solid #8ecae6;
+	border-top: 3px solid white;
+	padding: 0.5em;
 	width: 95%;
 	margin: 0 auto;
 }
 footer img{
-	width: 8%;
-	height: 8%;
+	width: 15%;
+	height: 15%;
 }
+
