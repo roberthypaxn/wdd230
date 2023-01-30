@@ -1,7 +1,6 @@
 // select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
-
+const headerdate = document.querySelector(".date");
+const footerdate = document.querySelector("#date");
 // derive the current date using a date object
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
@@ -12,5 +11,5 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 }).format(now);
 // long, medium, short options ... try them
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+headerdate.innerHTML = fulldate;
+footerdate.innerHTML = fulldate;
