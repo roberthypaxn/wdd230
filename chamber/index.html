@@ -27,22 +27,22 @@
                     </aside>
                 </div>
                 <nav id="navigation">
-                    <ul>
+                    <ul id="nav-list">
                         <li><a href="#">Discover</a></li>
                         <li><a href="#">Directory</a></li>
                         <li><a href="#">Join</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </nav>
                 <aside class="media">
                     <a href="#" class="fa fa-linkedin"></a></a>
                     <a href="#" class="fa fa-twitter"></a></a>
                 </aside>
             </section>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
             <div class="date"></div>
     </header>
     <main>
@@ -77,7 +77,7 @@
         if (window.innerWidth > 700) {
   // Code to execute when screen size is above 700 pixels
     function myFunction() {
-            var x = document.getElementById("navigation");
+            var x = document.getElementById("nav-list");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {

@@ -5,8 +5,27 @@
     .fa-bars{
         display: block;
     }
-    #navigation{
+    #nav-list{
         display: none;
+        width: 100%;
+    }
+    #navigation{
+        right: 12.3%;
+        top: 2em;
+        position:absolute;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 75%;
+        height: 13%;
+    }
+    #navigation ul{
+        display: flex;
+        flex-direction: column;
+        background-color: darkgray;
+        padding: 3em;
+        margin: 0;
+        height: 100%;
     }
     .media{
         width: 150px;
@@ -53,11 +72,8 @@
         background: #023047;
         color: #8ecae6;
         display: block;
-        position:relative;
         width: 3rem;
         height: 3em;
-        right: -92.5%;
-        top: -14.5rem;
         border: 1.5px solid white;
     }
     

@@ -61,15 +61,17 @@
         padding: 0.4em;
     }
     a.icon {
-        background: #023047;
-        color: #8ecae6;
-        display: block;
-        position:relative;
         width: 2rem;
         height: 2em;
-        right: -45%;
-        top: -9.5rem;
         border: 1.5px solid white;
+    }
+    #navigation{
+        right: 4%;
+        top: 3.5%;
+        position: absolute;
+        width: 87%;
+        height: 5%;
+
     }
     .icon .fa{
         padding: 5px 8px;
