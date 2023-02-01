@@ -1,4 +1,10 @@
 @media only screen and ( max-width: 119.99rem){
+    html{
+        padding: 0.5em;
+    }
+    .fa-bars{
+        display: block;
+    }
     #navigation{
         display: none;
     }
@@ -27,6 +33,7 @@
     }
     #spotlights{
         flex-direction: row;
+        margin-bottom: 40px;
     }
     #spot1, #spot2{
         width: 100%;
@@ -41,5 +48,34 @@
         width: 48%;
         align-items: stretch;
         justify-content: space-around;
+    }
+    a.icon {
+        background: #023047;
+        color: #8ecae6;
+        display: block;
+        position:relative;
+        width: 3rem;
+        height: 3em;
+        right: -92.5%;
+        top: -14.5rem;
+        border: 1.5px solid white;
+    }
+    
+    .icon:hover, .fa-bars:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .media .fa {
+        padding: 12px;
+        font-size: 13px;
+        width: 13px;
+        height: 10px;
+        margin: 1px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+    .icon .fa{
+        padding: 3px;
     }
 }

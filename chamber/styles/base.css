@@ -6,8 +6,6 @@
         margin: 0 auto;
         align-items: center;
     }
-   
-   
     header img{
         width: 50%;
         object-fit: contain;
@@ -19,7 +17,7 @@
         margin: 0 auto;
     }
     main{
-        height: 160vh;
+        height: 190vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -31,10 +29,6 @@
     }
     #join{
         display: none;
-    }
-    footer{
-        background-color: #F2E2D2;
-        color: #023047;
     }
     footer > section{
         display: flex;
@@ -54,9 +48,9 @@
         gap: 0.4em;
     }
     .fa {
-        padding: 12px;
-        font-size: 15px;
-        width: 15px;
+        padding: 8px;
+        font-size: 13px;
+        width: 13px;
         height: 10px;
         margin: 1px;
         text-align: center;
@@ -65,5 +59,21 @@
     }
     .media{
         padding: 0.4em;
+    }
+    a.icon {
+        background: #023047;
+        color: #8ecae6;
+        display: block;
+        position:relative;
+        width: 2rem;
+        height: 2em;
+        right: -45%;
+        top: -9.5rem;
+        border: 1.5px solid white;
+    }
+    .icon .fa{
+        padding: 5px 8px;
+        font-size: 20px;
+        margin: 0;
     }
 }

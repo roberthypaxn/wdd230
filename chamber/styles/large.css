@@ -1,11 +1,19 @@
+*{
+	color: white;
+}
+html{
+	padding: 5rem;
+	background-color: black;
+}
 body{
 	width: 80vw;
 	margin: 0 auto;
+	border: 15px double white;
 }
 header{
 	display: flex;
 	flex-direction: column;
-	background-color: #F2E2D2;
+	background-color: #023047;
 	color: #023047;
 }
 header ul{
@@ -25,11 +33,13 @@ header > section{
 	justify-content: center;
 	align-items: center;
 	padding: 1em;
+	gap: 4em;
 }
-header .date{
+.date{
 	text-align: center;
-	background-color: #8ecae6;
+	background-color: darkgray;
 	border: 2px solid white;
+	color: black;
 	padding: 1em;
 	width: 95%;
 	margin: 0 auto;
@@ -41,12 +51,12 @@ header .date{
 	height: 100%;
 }
 .fa-linkedin{
-	color: black;
-	border: 2px solid black;
+	color: turquoise;
+	border: 2px solid white;
 }
 .fa-twitter{
-	color: rgb(12, 167, 167);
-	border: 2px solid rgb(12, 167, 167);
+	color: turquoise;
+	border: 2px solid white;
 }
 .fa {
 	padding: 20px;
@@ -55,6 +65,7 @@ header .date{
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
+	margin: 5px;
 }
 main{
 	display: grid;
@@ -65,44 +76,56 @@ main{
 	"event call-to-act spotlight"
 	"weather call-to-act spotlight"
 	"join news spotlight";
-	height: 50vh;
+	height: 150vh;
 	padding: 1em;
+	background-color: #a0bdca;
 }
 #event{
 	grid-area: event;
-	background-color:darkkhaki;
+	background-color:#eee;
+	color: black;
+	padding: 1em;
 }
 #call-to-act{
 	grid-area: call-to-act;
-	background-color: darkkhaki;
+	background-color: #eee;
+	color: black;
+	padding: 1em;
 }
 #weather{
 	grid-area: weather;
-	background-color: darkkhaki;
+	background-color: #eee;
+	color: black;
+	padding: 1em;
 }
 #join{
 	grid-area: join;
-	background-color: darkkhaki;
+	background-color: #eee;
+	color: black;
+	padding: 1em;
 }
 #news{
 	grid-area: news;
-	background-color: darkkhaki;
+	background-color: #eee;
+	color: black;
+	padding: 1em;
 }
 #spotlights{
 	grid-area: spotlight;
 	display: flex;
 	flex-direction: column;
-	background-color: darkkhaki;
 }
-#spot1, #spot2{
-	border: 2px solid white;
+#spot1, #spot2, #spot3{
+	border: 2px solid black;
+	color: black;
+	padding: 1em;
+	background-color: #eee;
 }
 article div{
 	height: 100%;
 }
 footer{
-	background-color: #F2E2D2;
-	color: #023047;
+	background-color: #023047;
 }
 footer > section{
 	display: flex;
@@ -118,5 +141,8 @@ footer .copyright{
 footer img{
 	width: 15%;
 	height: 15%;
+}
+.fa-bars{
+	display: none;
 }
 
