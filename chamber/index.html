@@ -20,7 +20,7 @@
     <header>
             <section>
                 <div class="logo">
-                    <img src="images/logo.png">
+                    <a href="#"><img src="images/logo.png"></a>
                     <aside>
                         <h2>Virunga</h2>
                         <h4>Chamber of Commerce</h4>
@@ -39,6 +39,10 @@
                     <a href="#" class="fa fa-twitter"></a></a>
                 </aside>
             </section>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <div class="date"></div>
     </header>
     <main>
@@ -69,5 +73,18 @@
         <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
     </footer>
     <script src="scripts/date.js"></script>
+    <script>
+        if (window.innerWidth > 700) {
+  // Code to execute when screen size is above 700 pixels
+    function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        }
+    </script>
 </body>
 </html>
