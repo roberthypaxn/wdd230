@@ -6,5 +6,13 @@ button.addEventListener("click", function () {
 	const inputValue = inputField.value;
 	const listItem = document.createElement("li");
 	listItem.textContent = inputValue;
-	list.appendChild(listItem);
+	
+	const deleteButton = document.createElement("button");
+	deleteButton.textContent = "Delete";
+	deleteButton.addEventListener("click", function() {
+	  list.removeChild(listItem);
+	});
+	listItem.appendChild(deleteButton);
+  
+	  list.appendChild(listItem);
 });
