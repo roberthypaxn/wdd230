@@ -8,13 +8,17 @@
     <title>Favorite book of mormon chapters</title>
 </head>
 <body>
-        <h1>📖 Book of Mormon - Top 10</h1>
+        <h1>📘🪔 Book of Mormon - Top 25</h1>
         <main>
-            <label for="favchap">Enter Book and Chapter: </label>
-            <input type="text" id="favchap" placeholder="Your favorite chapter goes here.">
-            <button type="submit">Add Chapter</button>
-            <p id="noInput"></p>
-            <ul id="list"></ul>
+            <div class="input">
+                <label for="favchap">Enter Book and Chapter: </label>
+                <input type="text" id="favchap" placeholder="Your favorite chapter">
+                <button type="submit">Add Chapter</button>
+            </div>
+            <div class="output">
+                <p id="noInput"></p>
+                <ul id="list"></ul>
+            </div>
         </main>
 
     <script src="./scripts/bom.js"></script>
