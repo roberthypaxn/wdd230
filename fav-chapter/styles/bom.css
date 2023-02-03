@@ -83,3 +83,27 @@ li {
 		width: 70%;
 	}
 }
+@media only screen and (max-width: 82rem) {
+	body{
+		width: 90vw;
+	}
+	main{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 31.188rem){
+
+	body{
+		width: 100vw;
+		margin: 0 auto;
+	}
+	main{
+		width: 99%;
+	}
+	.input{
+		flex-direction: column;
+	}
+	h1{
+		font-size: 1.27rem;
+	}
+}
