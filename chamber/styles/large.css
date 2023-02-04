@@ -1,5 +1,8 @@
 *{
+	padding: 0;
+	margin: 0;
 	color: white;
+	font-family: 'Itim', cursive;
 }
 html{
 	padding: 5rem;
@@ -10,45 +13,72 @@ body{
 	margin: 0 auto;
 	border: 15px double white;
 }
-header{
-	display: flex;
-	flex-direction: column;
-	background-color: #023047;
-	color: #023047;
-}
-header ul{
-	display: flex;
-	list-style: none;
-	align-items: center;
-	gap: 1rem;
+
+header {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #023047;
+  color: white;
+  height: 12rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  font-family: Acme, Arial, sans-serif;
 }
 
-header > section{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-.logo{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1em;
-	gap: 4em;
+h1 {
+	font-size: 1.5rem;
 }
 .date{
-	text-align: center;
-	background-color: darkgray;
-	border: 2px solid white;
-	color: black;
-	padding: 1em;
-	width: 95%;
-	margin: 0 auto;
+  grid-row: 2/3;
+  grid-column:1/5;
+  text-align: center;
+  background-color: #D3D3D3;
+  color: black;
+  width: 98%;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+#logo{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+#logo-img{
+  width: 50%;
+  display: flex;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin: 0 auto;
+}
+#heading{
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 #navigation{
-    height: 100%;
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+#nav-list {
+	padding: 0.5rem;
 }
 .media{
-	height: 100%;
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+ul {
+	margin: 1rem;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+a{
+   text-decoration: none;
+   color: turquoise;
 }
 .fa-linkedin{
 	color: turquoise;
@@ -76,7 +106,7 @@ main{
 	"event call-to-act spotlight"
 	"weather call-to-act spotlight"
 	"join news spotlight";
-	height: 150vh;
+	height: 130vh;
 	padding: 1em;
 	background-color: #a0bdca;
 }
@@ -89,6 +119,11 @@ main{
 #call-to-act{
 	grid-area: call-to-act;
 	background-color: #eee;
+	background-image: url(../images/Virunga2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: multiply;
 	color: black;
 	padding: 1em;
 }
@@ -126,23 +161,48 @@ article div{
 }
 footer{
 	background-color: #023047;
+	display: grid;
+	height: 15rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	justify-content: center;
+	align-items: center;
 }
-footer > section{
+.address{
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
+.contact{
+	grid-row: 1/2;
+	grid-column: 3/4;
+}
+footer section{
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
 }
-footer .copyright{
+.copyright{
+	grid-row: 2/3;
+	grid-column: 1/4;
 	text-align: center;
 	border-top: 3px solid white;
 	padding: 0.5em;
 	width: 95%;
 	margin: 0 auto;
 }
-footer img{
-	width: 15%;
-	height: 15%;
-}
-.fa-bars{
-	display: none;
+.footer-img{
+	grid-row: 1/2;
+	grid-column: 1/2;
+	object-fit: contain;
+	image-rendering: pixelated;
+	margin: 0 auto;
+	width: 40%;
+	height: 40%;
 }
 
+@media only screen and (min-width: 99.99rem){
+    .nav_toggle{
+        display: none;
+    }
+}
