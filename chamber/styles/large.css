@@ -112,6 +112,7 @@ main{
 	background-color: #023047;
 	color: black;
 	padding: 1em;
+	text-align: center;
 }
 #call-to-act{
 	grid-area: call-to-act;
