@@ -19,7 +19,6 @@ header {
   padding: 1rem;
   background-color: #023047;
   color: white;
-  height: 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: 2fr 1fr;
@@ -111,7 +110,7 @@ main{
 }
 #event{
 	grid-area: event;
-	background-color:#eee;
+	background-color: #023047;
 	color: black;
 	padding: 1em;
 }
@@ -125,54 +124,114 @@ main{
 	background-blend-mode: multiply;
 	color: black;
 	padding: 1em;
-	height: 60vh;
+	height: 97%;
 	position: relative;
-}  
-.call-action {
-	background: #023047;
-	border: 1px solid #eee;
+}
+.sub-heading{
+	padding: 1rem;
+	text-align: center;
+}
+.call-action{
+	background: rgba(64, 224, 208, 0.781);
+	border: 1px solid #023047;
+	display: block;
+	padding: 20px 28px 20px 28px;
+}
+.action1 {
+	
 	position: absolute;
 	bottom: 7rem;
 	right: 7rem;
 	display: block;
-	padding: 20px 28px 20px 28px;
+	padding: 20px 28px;
 }
 #weather{
 	grid-area: weather;
-	background-color: #eee;
-	color: black;
+	background-color: #023047;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
 	padding: 1em;
+}
+#weather h2{
+	grid-row: 1/2;
+	grid-column: 1/4;
+}
+.wheather-icon{
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+.all-icons{
+	padding: 1em;
+	font-size: 5rem;
+}
+.temp{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	grid-row: 2/3;
+	grid-column: 2/3;
+}
+.wheather-mez{
+	grid-row: 3/4;
+	grid-column: 1/3;
+	text-align: center;
+	border-top: 3px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly
 }
 #join{
 	grid-area: join;
-	background-color: #eee;
+	background-color: #023047;
 	color: black;
 	padding: 1em;
 }
+.action2{
+	padding: 20px 20px;
+	width: 90%;
+	margin: 0 auto;
+}
+.content{
+	padding: 1.5em;
+	text-align: center;
+}
 #news{
 	grid-area: news;
-	background-color: #eee;
+	background-color: #023047;
 	color: black;
-	padding: 1em;
+	padding: 2em;
+	text-align: center;
 }
 #spotlights{
 	grid-area: spotlight;
 	display: flex;
 	flex-direction: column;
+	gap: 1em;
+	padding: 1em;
+	background-color: #023047;
+}
+.h3{
+	padding: 1em;
 }
 #spot1, #spot2, #spot3{
-	border: 2px solid black;
-	color: black;
-	padding: 1em;
-	background-color: #eee;
+	border: 2px solid white;
+	background-color: #023047;
+	padding: 3em 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
-article div{
-	height: 100%;
+.spot-contact{
+	text-align: center;
+	border-top: 3px solid white ;
+	width: 90%;
+	padding: 1em;
 }
 footer{
 	background-color: #023047;
 	display: grid;
-	height: 15rem;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 2fr 1fr;
 	justify-content: center;
