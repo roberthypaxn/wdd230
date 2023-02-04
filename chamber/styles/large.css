@@ -221,6 +221,7 @@ main{
 }
 .h3{
 	padding: 1em;
+	text-align: center;
 }
 #spot1, #spot2, #spot3{
 	border: 2px solid white;
