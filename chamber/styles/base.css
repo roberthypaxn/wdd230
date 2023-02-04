@@ -1,19 +1,49 @@
 @media only screen and (42rem >= width){
-    
+    html{
+        padding: 4rem 2rem;
+    }
+    body{
+        padding: 0;
+    }
     header{
-        width: 97%;
-        border-radius: 0%;
         margin: 0 auto;
-        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        justify-content: center;
     }
     header img{
-        width: 50%;
+        padding: 3.5rem;
         object-fit: contain;
         image-rendering: pixelated;
+    }
+    #navigation{
+        right: -1.5em;
+        top: 6.8rem;
+    }
+    .nav_toggle{
+        top: 0;
+        right: -5rem;
+    }
+    #logo{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #heading{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .media{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .date{
+        width: 80%;
+        grid-row: 2/3;
+        grid-column: 1/4;
         margin: 0 auto;
     }
     body{
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
     }
     main{
@@ -30,23 +60,39 @@
     #join{
         display: none;
     }
-    footer > section{
-        display: flex;
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
         justify-content: auto;
         flex-direction: column;
+        height: 60vh;
     }
-
+    .footer-img{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        object-fit: contain;
+        image-rendering: pixelated;
+        margin: 0 auto;
+        width: 55%;
+        height: 55%;
+    }
+    .address{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .contact{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .copyright{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
     footer img{
         width: 50%;
         height: 50%;
     }
-    header .date{
-        width: 90%;
-    }
-    .logo{
-        align-items: stretch;
-        gap: 0.4em;
-    }
+    
     .fa {
         padding: 8px;
         font-size: 13px;
@@ -58,20 +104,12 @@
         border-radius: 50%;
     }
     .media{
-        padding: 0.4em;
+        padding: 0;
     }
     a.icon {
         width: 2rem;
         height: 2em;
         border: 1.5px solid white;
-    }
-    #navigation{
-        right: 4%;
-        top: 3.5%;
-        position: absolute;
-        width: 87%;
-        height: 5%;
-
     }
     .icon .fa{
         padding: 5px 8px;
