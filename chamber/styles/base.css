@@ -57,6 +57,11 @@
     #call-to-act, #news, #event, #weather, #join, #spotlights{
         display: block;
     }
+    #spotlights{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
     #weather{
         width: 70%;
         margin: 0 auto;
