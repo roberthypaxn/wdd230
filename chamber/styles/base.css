@@ -1,9 +1,10 @@
 @media only screen and (42rem >= width){
     html{
-        padding: 5em 2em;
+        padding: 3em 0;
     }
     body{
         padding: 0;
+        width: auto;
     }
     header{
         margin: 0 auto;
@@ -21,8 +22,8 @@
         top: 6.8rem;
     }
     .nav_toggle{
-        top: 0;
-        right: -5rem;
+        top: -0.2rem;
+        right: -2rem;
     }
     #logo{
         grid-row: 1/2;
@@ -51,7 +52,25 @@
         "weather"
         "news"
         "spotlight";
-        width: min-content;
+        padding: 1em 0;
+    }
+    #call-to-act, #news, #event, #weather, #join, #spotlights{
+        display: block;
+    }
+    #weather{
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        height: 70%;
+    }
+    .sub-heading{
+        padding: 1em;
+    }
+    .spot-contact{
+        width: 70%;
+    }
+    #spot1, #spot2{
+        padding: 0;
     }
     #join{
         display: none;
