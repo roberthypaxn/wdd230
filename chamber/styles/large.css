@@ -78,7 +78,7 @@ a{
    text-decoration: none;
    color: turquoise;
 }
-a:hover{
+li a:hover{
 	border-bottom: 2.5px solid white ;
 }
 .fa-linkedin{
