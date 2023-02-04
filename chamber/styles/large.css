@@ -106,7 +106,6 @@ main{
 	"event call-to-act spotlight"
 	"weather call-to-act spotlight"
 	"join news spotlight";
-	height: 130vh;
 	padding: 1em;
 	background-color: #a0bdca;
 }
@@ -126,6 +125,17 @@ main{
 	background-blend-mode: multiply;
 	color: black;
 	padding: 1em;
+	height: 60vh;
+	position: relative;
+}  
+.call-action {
+	background: #023047;
+	border: 1px solid #eee;
+	position: absolute;
+	bottom: 7rem;
+	right: 7rem;
+	display: block;
+	padding: 20px 28px 20px 28px;
 }
 #weather{
 	grid-area: weather;
