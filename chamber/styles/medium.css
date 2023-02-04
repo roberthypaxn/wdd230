@@ -14,10 +14,8 @@
         height: 19rem;
         justify-content: space-between;
         align-items: center;
-
     }
     #navigation{
-        /*display: none;*/
         background: var(--clr-light);
         position: absolute;
         right: 2.2rem;
@@ -31,10 +29,6 @@
         background-color:#023047;
         border: 2px solid white;
     }
-    /*.nav-open #navigation{
-        display: block;
-        transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
-    }*/
     .nav_toggle {
         position: absolute;
         top:1rem;
@@ -85,7 +79,6 @@
     }
 
     main{
-        height: 160vh;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -97,7 +90,6 @@
     }
     #spotlights{
         flex-direction: row;
-        margin-bottom: 40px;
     }
     #spot1, #spot2{
         width: 100%;
