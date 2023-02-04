@@ -42,10 +42,6 @@
         grid-column: 1/4;
         margin: 0 auto;
     }
-    body{
-        width: 100%;
-        margin: 0 auto;
-    }
     main{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -55,6 +51,7 @@
         "weather"
         "news"
         "spotlight";
+        width: min-content;
     }
     #join{
         display: none;
