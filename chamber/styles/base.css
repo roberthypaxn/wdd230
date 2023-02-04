@@ -47,7 +47,6 @@
         margin: 0 auto;
     }
     main{
-        height: 190vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -65,7 +64,6 @@
         grid-template-rows: 2fr 1fr 1fr 1fr;
         justify-content: auto;
         flex-direction: column;
-        height: 60vh;
     }
     .footer-img{
         grid-row: 1/2;
