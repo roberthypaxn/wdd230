@@ -1,33 +1,81 @@
-@media only screen and ( max-width: 119.99rem){
+@media only screen and ( max-width: 100rem){
     html{
-        padding: 0.5em;
+        padding: 5rem;;
     }
-    .fa-bars{
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hamburger{
+        font-size: 2.5em;
+    }
+    header{
+        grid-template-columns: repeat(3, 1fr);
+        height: 19rem;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #navigation{
+        /*display: none;*/
+        background: var(--clr-light);
+        position: absolute;
+        right: 2.2rem;
+        top: 6.8rem;
+        box-shadow: 0 0 3em rgba(0,0,0,.15);
+        transform: translateX(100%);
+        transition: transform 700ms cubic-bezier(.5, 0, .5, 1);
+    }
+    li{
+        padding: 0.8em;
+        background-color:#023047;
+        border: 2px solid white;
+    }
+    /*.nav-open #navigation{
         display: block;
+        transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+    }*/
+    .nav_toggle {
+        position: absolute;
+        top:1rem;
+        right: 0;
+        transform: translateX(-100%);
+        background: var(--clr-light);
+        padding: .37em .5em;
+        border: 0;
+        border-radius: .25em 0 0 .25em;
+      }
+      .nav_toggle:hover{
+        border: 2px solid white;
+      }
+    .nav-open #navigation {
+        transform: translateX(-0.1rem);
+        width: 24rem;
+        height: 10rem;
+    }
+    #logo{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #heading{
+        grid-row: 1/2;
+        grid-column: 2/3;
     }
     #nav-list{
         display: none;
-        width: 100%;
+        width: 0;
     }
-    #navigation{
-        right: 12.3%;
-        top: 2em;
-        position:absolute;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        width: 75%;
-        height: 13%;
-    }
-    #navigation ul{
+    .nav-open #nav-list{
         display: flex;
         flex-direction: column;
-        background-color: darkgray;
-        padding: 3em;
+        padding: 0.5em 3em;
         margin: 0;
+        width: auto;
         height: 100%;
     }
     .media{
+        grid-row: 1/2;
+        grid-column: 3/4;
         width: 150px;
         height: 150px;
         display: flex;
@@ -35,10 +83,7 @@
         justify-content: center;
         align-items: center;
     }
-    header > section{
-        justify-content: space-evenly;
-    }
-    
+
     main{
         height: 160vh;
         grid-template-columns: 2fr 1fr;
