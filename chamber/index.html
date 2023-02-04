@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -18,33 +19,35 @@
 </head>
 <body>
     <header>
-            <section>
-                <div class="logo">
-                    <a href="#"><img src="images/logo.png"></a>
-                    <aside>
-                        <h2>Virunga</h2>
-                        <h4>Chamber of Commerce</h4>
-                    </aside>
-                </div>
-                <nav id="navigation">
-                    <ul id="nav-list">
-                        <li><a href="#">Discover</a></li>
-                        <li><a href="#">Directory</a></li>
-                        <li><a href="#">Join</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </nav>
-                <aside class="media">
-                    <a href="#" class="fa fa-linkedin"></a></a>
-                    <a href="#" class="fa fa-twitter"></a></a>
-                </aside>
-            </section>
-            <div class="date"></div>
-    </header>
+        <a id="logo" href="#">
+              <img id="logo-img" src="images/logo.png">
+        </a>
+        
+        <aside id="heading">
+          <h2>Virunga</h2>
+          <h4>Chamber of Commerce</h4>
+        </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">🥪</span>
+        </button>
+        <nav id="navigation">
+            
+            <ul id="nav-list">
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+        
+        <aside class="media">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </aside>
+        
+        <div class="date"></div>
+      </header>
     <main>
         <section id="call-to-act">Hello with site name and call to action</section>
         <section id="news">News Release</section>
@@ -58,33 +61,25 @@
         </article>
     </main>
     <footer>
-        <section>
-                <img src="images/logo.png" >
-                <section>
-                    <h3>Virunga Chamber of Commerce</h3>
-                    <p>KG 353 St</p>
-                    <p>Kigali Rwanda</p>
-                </section>
-                <section>
-                    <p>info@virungachamber.org</p>
-                    <p>+250700000000</p>
-                </section>
-        </section>
-        <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
+            <img class="footer-img" src="images/logo.png" >
+            <section class="address">
+                <h3>Virunga Chamber of Commerce</h3>
+                <p>KG 353 St</p>
+                <p>Kigali Rwanda</p>
+            </section>
+            <section class="contact">
+                <p>info@virungachamber.org</p>
+                <p>+250700000000</p>
+            </section>
+            <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
     </footer>
     <script src="scripts/date.js"></script>
     <script>
-        if (window.innerWidth > 700) {
-  // Code to execute when screen size is above 700 pixels
-    function myFunction() {
-            var x = document.getElementById("nav-list");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-        }
+        const navToggle = document.querySelector('.nav_toggle');
+
+        navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        });
     </script>
 </body>
 </html>
