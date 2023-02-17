@@ -1,4 +1,4 @@
-@media only screen and ( max-width: 100rem){
+@media only screen and (min-width: 480.001px) and (max-width: 91.25rem){
     html{
         padding: 5rem 2em;;
     }
@@ -28,6 +28,7 @@
         padding: 0.8em;
         background-color:#023047;
         border: 2px solid white;
+        text-align: center;
     }
     .nav_toggle {
         position: absolute;
@@ -78,13 +79,26 @@
 
     main{
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: .7fr .5fr .5fr .5fr .5fr;
         grid-template-areas:
         "call-to-act call-to-act"
         "news news"
         "spotlight spotlight"
         "join join"
         "event weather";
+    }
+    .center-title{
+        top: 2rem;
+        left: 1.3rem;
+    }
+    .action1 {
+        top: auto;
+        bottom: 3rem;
+        right: 2rem;
+    }
+    .picture{
+        width: 100%;
+        height: 100%;
     }
     #spotlights{
         flex-direction: row;

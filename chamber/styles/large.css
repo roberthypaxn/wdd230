@@ -12,7 +12,6 @@ body{
 	margin: 0 auto;
 	border: 15px double white;
 }
-
 header {
   margin: 0 auto;
   padding: 1rem;
@@ -46,9 +45,8 @@ h1 {
 }
 #logo-img{
   width: 50%;
-  display: flex;
+  display: block;
   object-fit: contain;
-  image-rendering: pixelated;
   margin: 0 auto;
 }
 #heading{
@@ -100,12 +98,12 @@ li a:hover{
 }
 main{
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1.5fr 1fr;
+	grid-template-rows: 1fr .5fr 0.5fr;
 	gap: 1em;
 	grid-template-areas:
 	"event call-to-act spotlight"
-	"weather call-to-act spotlight"
+	"weather news spotlight"
 	"join news spotlight";
 	padding: 1em;
 	background-color: #a0bdca;
@@ -126,8 +124,7 @@ main{
 	background-position: center center;
 	background-blend-mode: multiply;
 	color: black;
-	padding: 1em;
-	height: 97%;
+	padding: .5em;
 	position: relative;
 }
 .sub-heading{
@@ -140,10 +137,16 @@ main{
 	display: block;
 	padding: 20px 28px 20px 28px;
 }
-.action1 {
-	
+.center-title{
 	position: absolute;
-	bottom: 7rem;
+	top: 2rem;
+	left: 2rem;
+	color: black;
+	display: block;
+}
+.action1 {
+	position: absolute;
+	top: 20rem;
 	right: 7rem;
 	display: block;
 	padding: 20px 28px;
@@ -230,6 +233,7 @@ main{
 	border: 2px solid white;
 	background-color: #023047;
 	padding: 3em 1em;
+	font-size: .7rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -276,13 +280,12 @@ footer section{
 	grid-row: 1/2;
 	grid-column: 1/2;
 	object-fit: contain;
-	image-rendering: pixelated;
 	margin: 0 auto;
-	width: 40%;
-	height: 40%;
+	width: 50%;
+	height: 50%;
 }
 
-@media only screen and (min-width: 99.99rem){
+@media only screen and (min-width: 91.25rem){
     .nav_toggle{
         display: none;
     }
