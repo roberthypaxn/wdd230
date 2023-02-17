@@ -21,7 +21,7 @@
 <body>
     <header>
         <a id="logo" href="#">
-              <img id="logo-img" src="images/logo.png">
+              <img id="logo-img" src="images/logo.webp">
         </a>
         
         <aside id="heading">
@@ -51,7 +51,13 @@
     </header>
     <main>
         <section id="call-to-act">
-            <h2>Welcome To Virunga Chamber</h2>
+            <picture>
+                <source srcset="images/250-wdd230-org.jpg" media="(max-width: 480px)">
+                <source srcset="images/mid-large-wdd230-org.jpg" media="(min-width: 480.1px) and (max-width: 91.25rem)">
+                <img class="picture" src="images/wdd230-org.jpg" alt="hero image">
+            </picture>              
+              
+            <h2 class="center-title">Welcome To Virunga Chamber</h2>
             <button class="call-action action1">
                 Join The Chamber
             </button>
@@ -119,7 +125,7 @@
         </article>
     </main>
     <footer>
-            <img class="footer-img" src="images/logo.png" >
+            <img class="footer-img" src="images/logo.webp" >
             <section class="address">
                 <h3>Virunga Chamber of Commerce</h3>
                 <p>KG 353 St</p>
