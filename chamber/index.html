@@ -80,11 +80,11 @@
         <aside id="weather">
             <h2 class="sub-heading">Weather</h2>
             <div class="wheather-icon all-icons">🌦️</div>
-                <h3 class="temp">33°C</h3>
+                <h3 class="temp"></h3>
                 <p class="wheather-description">Partly Cloudy</p>
             <div class="wheather-mez">
-                <p> Windspeed: <span>2.5 km/h</span></p>
-                <p>Wind Chill: <span>N/A</span></p>
+                <p> Windspeed: <span id="windSpeed"></span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
             </div>
 
         </aside>
@@ -145,5 +145,6 @@
         document.body.classList.toggle('nav-open');
         });
     </script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
