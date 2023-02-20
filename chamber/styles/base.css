@@ -81,7 +81,7 @@
         grid-column: 1/4;
         margin: 0 auto;
     }
-    main{
+    #main-index{
         grid-template-columns: 1fr;
         grid-template-rows: .3fr .5fr .5fr .5fr 1fr;
         grid-template-areas:
