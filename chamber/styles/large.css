@@ -3,14 +3,17 @@
 	margin: 0;
 	color: white;
 	font-family: 'Itim', cursive;
+	box-sizing: border-box;
 }
 html{
 	background-color: black;
+	padding: 3rem;
 }
 body{
-	width: 80vw;
 	margin: 0 auto;
-	border: 15px double white;
+	border: 15px double black;
+	padding: 1rem;
+	background-color: white;
 }
 header {
   margin: 0 auto;
@@ -24,16 +27,13 @@ header {
   align-items: center;
   justify-content: center;
   font-family: Acme, Arial, sans-serif;
-}
-
-h1 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .date{
   grid-row: 2/3;
   grid-column:1/5;
   text-align: center;
-  background-color: #D3D3D3;
+  background-color: white;
   color: black;
   width: 98%;
   padding: 0.5em;
@@ -63,6 +63,12 @@ h1 {
 .media{
   grid-row: 1/2;
   grid-column: 4/5;
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  gap: 1em;
+  flex-direction: row;
 }
 ul {
 	margin: 1rem;
@@ -70,7 +76,6 @@ ul {
 	display: flex;
 	justify-content: space-around;
 }
-
 
 a{
    text-decoration: none;
@@ -81,22 +86,27 @@ li a:hover{
 }
 .fa-linkedin{
 	color: turquoise;
-	border: 2px solid white;
 }
 .fa-twitter{
 	color: turquoise;
-	border: 2px solid white;
 }
 .fa {
-	padding: 20px;
-	font-size: 30px;
-	width: 30px;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 50%;
-	margin: 5px;
+	font-size: 40px;
+	padding: 0.4em;
+	border-radius: 10px;
+	border: 2px solid white;
 }
-main{
+.fa:hover {
+    background: #1effc3;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 3px solid black;
+    box-shadow: 0 0 5px #1effc3,
+                0 0 25px #1effc3,
+                0 0 0px #1effc3,
+                0 0 0px #1effc3;
+}
+#main-index{
 	display: grid;
 	grid-template-columns: 1fr 1.5fr 1fr;
 	grid-template-rows: 1fr .5fr 0.5fr;
@@ -106,7 +116,6 @@ main{
 	"weather news spotlight"
 	"join news spotlight";
 	padding: 1em;
-	background-color: #a0bdca;
 }
 #event{
 	grid-area: event;
@@ -262,6 +271,7 @@ footer{
 	grid-template-rows: 2fr 1fr;
 	justify-content: center;
 	align-items: center;
+	font-size: 1.5rem;
 }
 .address{
 	grid-row: 1/2;
@@ -294,7 +304,163 @@ footer section{
 	width: 50%;
 	height: 50%;
 }
-
+/*******************************************************************/
+h1{
+    text-align: center;
+    margin: 3px 0px 0px 0px;
+	color: black;
+    padding-top:40px;
+    padding-bottom: 40px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+.header-content{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+	color: black;
+}
+.header-content *{
+	color: black;
+}
+.button-discover{
+	border: 3px solid white;;
+    color: white;
+    background: rgba(64, 224, 208, 0.781);
+	border: 1px solid #023047;
+    padding: 15px 30px 15px 30px;
+    margin: 5px;
+    font-size: large;
+}
+.liner{
+    border-right: 5px dashed #000000;
+}
+.middle{
+	text-align: center;
+    border-top: 10px double white;
+    border-bottom: 10px double white;
+    color: white;
+    background-color: #023047;
+}
+.middle>p{
+    margin: 0;
+    padding: 40px;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px auto;
+    text-align: center;
+}
+.container1 *{
+	color: #000000;
+}
+.all-merch{
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: #1effc3;
+    border-left: 5px dashed #000000;
+    border-right: 5px dashed #000000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.card .content {
+    flex: 1 1 auto;
+}
+.card .card-footer{
+    border-top: 2px dashed #000000;
+    padding: 20px;
+    display: grid;
+    background-color: #023047;
+}
+.card-footer{
+	color: white;
+}
+.container2{
+    background-color: #023047;
+    border-top: 10px double white;
+    border-bottom: 10px double white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px auto;
+}
+.in-container{
+    display: flex;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.in{
+    width: 700px;
+    height: auto;
+    padding: 20px;
+}
+.in1, .in2, .in3, .in4{
+    margin: 0;
+}
+.in2{
+    border-bottom: 5px dashed white;
+    border-left: 5px dashed white;
+}
+.in3{
+    border-right: 5px dashed rgba(64, 224, 208, 0.781);
+    border-top: 5px dashed rgba(64, 224, 208, 0.781);
+}
+.in3-h2{
+	padding: 1rem;
+}
+.in3-p{
+    border-bottom: 5px solid white;
+}
+#dropdown{
+    width: 100%;
+    height: 30%;
+	color: #000000;
+    text-align: center;
+    font-size: 1rem;
+    padding: .2em;
+}
+.expo-ground{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+}
+.expo-ground *{
+	color: black;
+}
+#cite-discover{
+    padding: 0;
+}
+#ear{
+    padding:30px;
+    margin: 0;
+}
+#talk{
+    padding:90px;
+    width: auto;
+    text-align: center;
+    border-left: 5px dashed #000000;
+    margin: 0 auto;
+    margin-left: 0;
+}
 @media only screen and (min-width: 91.25rem){
     .nav_toggle{
         display: none;
