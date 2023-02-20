@@ -13,38 +13,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="discover-large.css">
+    <link rel="stylesheet" href="../styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
     <title>Discover</title>
 </head>
 <body>
-    <nav class="nav">
-        <a class="logo" href="./index.html"><img src="../images/logo.webp" alt=""></a>
-        <ul class="ul">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">About*Us</a></li>
-        </ul>
-        <a class="nav-contact" href="#">Contact*Us</a>
-    </nav>
     <header>
-        <h1>Discover Virunga</h1>
-    <section class="header-content">
-        <div class="liner">
-            <div>
-                <h2>Something Like an H2</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laudantium dolore odit quidem eveniet provident commodi? Neque deleniti recusandae, ducimus rem sequi, repellat itaque error architecto beatae iste dignissimos totam!</p>
-            </div>
-            <div>
-                <button>Assyi We!</button>
-                <a href="#">Go to Store</a>
-            </div>
-            <img src="./images/blackberry.png">
-        </div>
-        <img id="idea" src="./images/My Post-1.png">
-    </section>
+        <a id="logo" href="#">
+              <img id="logo-img" src="../images/logo.webp">
+        </a>
+        
+        <aside id="heading">
+          <h2>Virunga</h2>
+          <h4>Chamber of Commerce</h4>
+        </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">🥪</span>
+        </button>
+        <nav id="navigation">
+            
+            <ul id="nav-list">
+              <li><a href="pages/discover.html">Discover</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+        
+        <aside class="media">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </aside>
+        
+        <div class="date"></div>
     </header>
-    <main>
+    <section>
+        <h1>Discover Virunga</h1>
+        <section class="header-content">
+            <div class="liner">
+                <div>
+                    <h2>Something Like an H2</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laudantium dolore odit quidem eveniet provident commodi? Neque deleniti recusandae, ducimus rem sequi, repellat itaque error architecto beatae iste dignissimos totam!</p>
+                </div>
+                <div>
+                    <button class="button-discover">Assyi We!</button>
+                    <a href="#">Go to Store</a>
+                </div>
+                <img src="./images/blackberry.png">
+            </div>
+            <img id="idea" src="./images/My Post-1.png">
+        </section>
+    </section>
+    <main id="main-discover">
         <section class="middle">
             <h2>Ahaaa! Yewe maama! Yewe maama! Ndumiwe 🫢</h2>
             <p> Kandi njyyewe ndagaswi * kandi njyewe ndagaswi</p>
@@ -85,7 +107,7 @@
                 <div class="in in2">
                     <h2>Ha! Ha! Ha! Bless your soul🤣</h2>
                     <p>She said, "You drunk?" I said "No I'm high." I sais "You straight?" She said "No, I'm Bi".</p>
-                    <button>Assyi We!</button>
+                    <button class="button-discover">Assyi We!</button>
                 </div>
             </div>
             <div class="in-container">
@@ -111,45 +133,30 @@
                 when screen whippers that are never gonna stop, never stop. Whiping all the snow fron the top of our car. 
                 A car that has travelled so far from our homes. It's never good to feel alone, but we've got what we've got. 
                 It's friends that we've got in the car.
-                <cite>Rosenberg</cite>
+                <cite id="cite-discover">Rosenberg</cite>
             </blockquote>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-box">
-            <a class="logo2" href="./index.html"><img src="../images/logo.webp" alt=""></a>
-            <p>We love your company and we work for your joy</p>
-        </div>
-        <nav class="footer-boxes">
-            <h4>Title</h4>
-            <ul class="footer-ul">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/Sound.html">Sound</a></li>
-                <li><a href="./pages/Adventure.html">Adventure</a></li>
-                <li><a href="./pages/Atelier.html">Atelier</a></li>
-                <li><a href="#">About*Us</a></li>
-            </ul>
-        </nav>
-        <nav class="footer-boxes">
-            <h4>Title</h4>
-            <ul class="footer-ul">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/Sound.html">Sound</a></li>
-                <li><a href="./pages/Adventure.html">Adventure</a></li>
-                <li><a href="./pages/Atelier.html">Atelier</a></li>
-                <li><a href="#">About*Us</a></li>
-            </ul>
-        </nav>
-        <nav class="footer-boxes">
-            <h4>Title</h4>
-            <ul class="footer-ul">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/Sound.html">Sound</a></li>
-                <li><a href="./pages/Adventure.html">Adventure</a></li>
-                <li><a href="./pages/Atelier.html">Atelier</a></li>
-                <li><a href="#">About*Us</a></li>
-            </ul>
-        </nav>
+    <footer>
+        <img class="footer-img" src="../images/logo.webp" >
+        <section class="address">
+            <h3>Virunga Chamber of Commerce</h3>
+            <p>KG 353 St</p>
+            <p>Kigali Rwanda</p>
+        </section>
+        <section class="contact">
+            <p>info@virungachamber.org</p>
+            <p>+250700000000</p>
+        </section>
+        <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
     </footer>
+    <script src="../scripts/date.js"></script>
+    <script>
+        const navToggle = document.querySelector('.nav_toggle');
+
+        navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        });
+    </script>
 </body>
 </html>
