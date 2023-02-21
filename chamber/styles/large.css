@@ -357,7 +357,7 @@ h1{
 }
 .middle>p{
     margin: 0;
-    padding: 40px;
+    padding: .3em 0 1em 0;
 	font-size: 1.5rem;
 }
 .container1{
