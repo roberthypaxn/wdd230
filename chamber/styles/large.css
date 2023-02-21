@@ -358,6 +358,7 @@ h1{
 .middle>p{
     margin: 0;
     padding: 40px;
+	font-size: 1.5rem;
 }
 .container1{
     display: flex;
@@ -370,6 +371,12 @@ h1{
 .container1 *{
 	color: #000000;
 }
+.container2 p{
+	font-size: large;
+}
+.container2 h2{
+	font-size: 1.5em;
+}
 .all-merch{
     display: flex;
     gap: 10px;
@@ -378,7 +385,6 @@ h1{
 }
 .card{
     height: 450px;
-    background-color: #1effc3;
     border-left: 5px dashed #000000;
     border-right: 5px dashed #000000;
     display: flex;
@@ -391,7 +397,7 @@ h1{
 .card .card-footer{
     border-top: 2px dashed #000000;
     background-color: #023047;
-	width:24em;
+	width:22em;
 }
 .card-footer{
 	color: white;
@@ -432,6 +438,15 @@ h1{
     border-right: 5px dashed rgba(64, 224, 208, 0.781);
     border-top: 5px dashed rgba(64, 224, 208, 0.781);
 }
+.in3-p-1{
+	font-size: large;
+	padding: 0.3em;
+	max-width: 45em;
+	margin: 0 auto;
+}
+.in3-h2-1{
+	padding: 1em;
+}
 .in3-h2{
 	padding: 1rem;
 }
@@ -441,7 +456,7 @@ h1{
 #dropdown{
     width: 100%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 1em 0;
 	border: 2px solid white;
 	list-style: none;
@@ -462,6 +477,7 @@ h1{
 }
 .sous-menu ul{
 	display: flex;
+	font-size: 1rem;
 	flex-direction: column;
 	justify-content: space-evenly;
 	gap: .3em;
@@ -492,7 +508,7 @@ h1{
 	color: black;
 }
 #cite-discover{
-    padding: 0;
+    padding: 2em;
 }
 #ear{
     padding:30px;
@@ -502,6 +518,7 @@ h1{
     padding:90px;
     width: auto;
     text-align: center;
+	font-size: large;
     border-left: 5px dashed #000000;
     margin: 0 auto;
     margin-left: 0;
