@@ -186,4 +186,12 @@
         font-size: 20px;
         margin: 0;
     }
+    /*************************************************/
+    #main-discover{
+        display: block;
+    }
+    .img-d{
+        display: block;
+        width: 40%;
+    }
 }

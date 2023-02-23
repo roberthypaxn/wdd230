@@ -143,4 +143,53 @@
     .icon .fa{
         padding: 3px;
     }
+/*********************************************************************************************/
+    .header-content{
+        grid-template-columns: 50%;
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .liner{
+        border: none;
+    }
+    .card{
+        height: auto;
+        width: 50%;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card-footer{
+        font-size: 1.05rem;
+    }
+    .card1{
+        display: none;
+    }
+    .container2{
+        display: grid;
+        grid-template-rows: 1fr .75fr;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+
+    }
+    .in-container{
+        flex-direction: column;
+    }
+    .in-cont2{
+        flex-direction: column-reverse;
+    }
+    .expo-ground{
+        flex-direction: column;
+    }
+    #talk{
+        border-right: 5px dashed #000000;
+    }
+    .in3, .in2{
+        border: none;
+    }
+    .img-d{
+        display: block;
+        width: 70%;
+    }
 }

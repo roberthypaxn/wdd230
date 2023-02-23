@@ -397,13 +397,14 @@ h1{
 .card .card-footer{
     border-top: 2px dashed #000000;
     background-color: #023047;
-	width:22em;
 }
 .card-footer{
 	color: white;
 	padding: 1em;
 	text-align: left;
 	display: block;
+	width: 100%;
+	font-size: 1.3em;
 	height:8rem;
 }
 .container2{
