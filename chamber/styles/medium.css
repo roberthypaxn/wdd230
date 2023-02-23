@@ -14,6 +14,7 @@
         height: 19rem;
         justify-content: space-between;
         align-items: center;
+        font-size: small;
     }
     #navigation{
         background: var(--clr-light);
@@ -109,7 +110,7 @@
     #spot3{
         display: none;
     }
-    footer section{
+    .footer-all section{
         align-items: center;
     }
     .logo{
@@ -130,7 +131,7 @@
         background-color: #ddd;
         color: black;
     }
-    .media .fa {
+    .fa {
         padding: 12px;
         font-size: 13px;
         width: 13px;
@@ -143,12 +144,20 @@
     .icon .fa{
         padding: 3px;
     }
+    .footer-all{
+        font-size: small;
+        padding: 1em;
+    }
+}
+@media only screen and (max-width: 1790px)
+{
 /*********************************************************************************************/
     .header-content{
         grid-template-columns: 50%;
         grid-template-rows: 50% 50%;
         align-items: center;
         justify-content: center;
+        display: block;
     }
     .liner{
         border: none;
@@ -171,16 +180,23 @@
         grid-template-rows: 1fr .75fr;
         grid-template-columns: 1fr;
         margin: 0 auto;
-
+        display: block;
     }
     .in-container{
         flex-direction: column;
+        align-items: center;
     }
     .in-cont2{
         flex-direction: column-reverse;
     }
+    .in{
+        width: fit-content;
+    }
     .expo-ground{
         flex-direction: column;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
     }
     #talk{
         border-right: 5px dashed #000000;
@@ -190,6 +206,6 @@
     }
     .img-d{
         display: block;
-        width: 70%;
+        width: 100%;
     }
 }

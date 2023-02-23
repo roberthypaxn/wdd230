@@ -16,6 +16,7 @@ body{
 	background-color: white;
 }
 header {
+  display: block;
   margin: 0 auto;
   padding: 1rem;
   background-color: #023047;
@@ -263,7 +264,7 @@ button:hover {
 	width: 90%;
 	padding: 1em;
 }
-footer{
+.footer-all{
 	background-color: #023047;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -280,7 +281,7 @@ footer{
 	grid-row: 1/2;
 	grid-column: 3/4;
 }
-footer section{
+.footer-all section{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

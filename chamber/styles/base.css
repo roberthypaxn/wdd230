@@ -195,3 +195,13 @@
         width: 40%;
     }
 }
+@media only screen and (max-width: 850px)
+{
+    .in-container{
+        justify-content: center;
+        align-items: center;
+    }
+    #talk{
+        border: none;
+    }
+}
