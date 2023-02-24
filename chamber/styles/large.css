@@ -525,6 +525,13 @@ h1{
     margin: 0 auto;
     margin-left: 0;
 }
+.picture {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+  }
+.fade-in {
+    opacity: 1;
+}
 @media only screen and (min-width: 91.25rem){
     .nav_toggle{
         display: none;
