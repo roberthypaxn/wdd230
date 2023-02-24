@@ -11,15 +11,16 @@ function loadTheImg(img){
 
 const options = {
     root: null,
-    threshold: 0
+    threshold: 0,
+    rootMargin: "-200px"
 }
 const discoObserver = new IntersectionObserver
 (function(shows, discoObserver){
     shows.forEach (show =>{
-        console.log(show.target);
         if(!show.isIntersecting){
             return;
         } else {
+            console.log(show.target);
             loadTheImg(show.target);
             show.target.classList.toggle("fade-in");
             discoObserver.unobserve(show.target);
