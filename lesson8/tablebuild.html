@@ -10,18 +10,43 @@
     <meta name="author" content="Robert Hypax Ndiramiye">
     <meta name="description" content="Tables: Frontend Development I - BYUI">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/tablebuild.css">
     <title>Tables</title>
 </head>
 <body>
-    <p>Still under development... wait a few hours before the comments</p>
-    <table bgcolor="black" style="width: 400px; height: 400px;">
-        <tr>
-            <td rowspan="2" bgcolor="white">Temperature</td>
-            <td bgcolor="white">High: 90</td>
+    <table>
+        <caption>Table 1: Account Feature Comparision</caption>
+        <thead>
+            <tr>
+                <th colspan="4" scope="colgroup">ACME Wildwest Services</th>
             </tr>
             <tr>
-            <td bgcolor="white">Low: 70</td>
+                <th scope="col" id="first-left"></th>
+                <th scope="col">Basic</th>
+                <th scope="col">Premium</th>
+                <th scope="col">Deluxe</th>
             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feature 1</td>
+                <td class="checkmark">✓</td>
+                <td class="checkmark">✓</td>
+                <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+                <td>Feature 2</td>
+                <td class="cross">✗</td>
+                <td class="checkmark">✓</td>
+                <td class="checkmark">✓</td>
+            </tr>
+            <tr>
+                <td>Feature 3</td>
+                <td class="cross">✗</td>
+                <td class="cross">✗</td>
+                <td class="checkmark">✓</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>

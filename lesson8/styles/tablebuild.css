@@ -1,0 +1,49 @@
+table {
+    margin: 10% auto;
+    border: 2px solid black;
+    box-shadow: 0 0 7px lightgreen;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    color: black;
+    font-size: 1rem;
+    caption-side: bottom;
+}
+
+tr:first-child th, .highlight {
+    background-color: darkolivegreen;
+    color: white;
+    font-size: larger;
+}
+
+th, td {
+    padding: 40px 70px;
+    border: 1px solid darkolivegreen;
+}
+
+th {
+    background-color: rgb(153, 153, 153);
+    font-size: large;
+}
+
+#first-left {
+    background-color: darkolivegreen;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+.cross {
+    color: red;
+}
+
+.checkmark {
+    color: green;
+}
