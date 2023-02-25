@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robert Hypax Ndiramiye">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Chamber of Commerce Project: Frontend Development I - BYUI">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/large.css">
+    <link rel="stylesheet" href="../styles/medium.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <title>Join</title>
+</head>
+<body>
+    <header>
+        <a id="logo" href="../index.html">
+              <img id="logo-img" src="../images/logo.webp" loading="eager">
+        </a>
+        
+        <aside id="heading">
+          <h2>Virunga</h2>
+          <h4>Chamber of Commerce</h4>
+        </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">🥪</span>
+        </button>
+        <nav id="navigation">
+            
+            <ul id="nav-list">
+              <li><a href="pages/discover.html">Discover</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+        
+        <aside class="media">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </aside>
+        
+        <div class="date"></div>
+    </header>
+    <h1>Join Virunga Chamber Of Commerce</h1>
+    <main id="the-main">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Business Position <input type="text" name="position_title" pattern="[A-Za-z\s-]{7,}" title="Please enter at least 7 characters, spaces, or hyphens only">            </label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Business Name/Title <input type="text" name="business"></label>
+            
+                <label class="top">Membership Level
+                    <select name="Membership">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="NP">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+            
+                <label class="top">Business Description<textarea id="business-description" name="business-description"></textarea></label>
+            </fieldset>
+            <label>
+                <input type="hidden" name="datetime" id="datetime">
+            </label>
+            <label><input type="submit" value="Join The Chamber" class="submitBtn"></label>
+        </form>
+        <table>
+            <caption>Table 1: Account Feature Comparision</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Membership Benefits</th>
+                </tr>
+                <tr>
+                    <th scope="col" id="first-left"></th>
+                    <th scope="col">Non Profits</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>One business partner provided</td>
+                    <td class="checkmark">✓</td>
+                    <td class="checkmark">✓</td>
+                    <td class="checkmark">✓</td>
+                    <td class="checkmark">✓</td>
+                </tr>
+                <tr>
+                    <td>Discount on Musanze Market purchases</td>
+                    <td class="cross">✗</td>
+                    <td class="checkmark">✓</td>
+                    <td class="checkmark">✓</td>
+                    <td class="checkmark">✓</td>
+                </tr>
+                <tr>
+                    <td>Discount on tourguiding and vehicles</td>
+                    <td class="cross">✗</td>
+                    <td class="cross">✗</td>
+                    <td class="checkmark">✓</td>
+                    <td class="checkmark">✓</td>
+                </tr>
+                <tr>
+                    <td>Invitation to networking events</td>
+                    <td class="cross">✗</td>
+                    <td class="cross">✗</td>
+                    <td class="cross">✗</td>
+                    <td class="checkmark">✓</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="footer-all">
+        <img class="footer-img" src="../images/logo.webp" alt="logo" loading="eager">
+        <section class="address">
+            <h3>Virunga Chamber of Commerce</h3>
+            <p>KG 353 St</p>
+            <p>Kigali Rwanda</p>
+        </section>
+        <section class="contact">
+            <p>info@virungachamber.org</p>
+            <p>+250700000000</p>
+        </section>
+        <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
+    </footer>
+    <script src="../scripts/date.js"></script>
+    <script src="../scripts/lazyloading_chamber.js"></script>
+    <script>
+        // Get the current date and time
+        const now = new Date();
+        const datetime = now.toISOString();
+      
+        // Set the value of the input field
+        const input = document.getElementById('datetime');
+        input.value = datetime;
+      </script>
+      
+    <script>
+        const navToggle = document.querySelector('.nav_toggle');
+
+        navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

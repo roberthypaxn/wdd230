@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robert Hypax Ndiramiye">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Chamber of Commerce Project: Frontend Development I - BYUI">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/large.css">
+    <link rel="stylesheet" href="../styles/medium.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <title>Thank You</title>
+    <style>
+        .thankyou *{
+            color: rgb(60, 121, 54);
+            padding: 1em;
+        }
+        .thankyou{
+            height: 30vh;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgb(60, 121, 54);
+            border-radius: 4px;
+            margin: 30vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a id="logo" href="../index.html">
+              <img id="logo-img" src="../images/logo.webp" loading="eager">
+        </a>
+        
+        <aside id="heading">
+          <h2>Virunga</h2>
+          <h4>Chamber of Commerce</h4>
+        </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">🥪</span>
+        </button>
+        <nav id="navigation">
+            
+            <ul id="nav-list">
+              <li><a href="pages/discover.html">Discover</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+        
+        <aside class="media">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </aside>
+        
+        <div class="date"></div>
+    </header>
+    <div class="thankyou">
+        <h2>Thank you for joining virunga Chamber</h2>
+        <p>We have received your information and will are working on your application</p>
+    </div>
+    <footer class="footer-all">
+        <img class="footer-img" src="../images/logo.webp" alt="logo" loading="eager">
+        <section class="address">
+            <h3>Virunga Chamber of Commerce</h3>
+            <p>KG 353 St</p>
+            <p>Kigali Rwanda</p>
+        </section>
+        <section class="contact">
+            <p>info@virungachamber.org</p>
+            <p>+250700000000</p>
+        </section>
+        <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
+    </footer>
+    <script src="../scripts/date.js"></script>
+ 
+    <script>
+        const navToggle = document.querySelector('.nav_toggle');
+
+        navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

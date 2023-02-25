@@ -209,3 +209,11 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 1630px){
+    #the-main{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}

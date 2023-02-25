@@ -537,3 +537,136 @@ h1{
         display: none;
     }
 }
+
+/********************join********************/
+form *, table *{
+	color: black;
+}
+#the-main{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+form{
+	width: 40rem;
+	margin: 0 auto;
+}
+form fieldset{
+	margin: 2rem 0;
+	border: 3px solid #023047;
+	border-radius: 10px;
+	padding: .5rem 2%;
+	width: 100%;
+	max-width: 40rem;
+}
+label{
+	margin: 0 auto;
+}
+form legend{
+	color: #445ba9;
+	margin: 0 1rem;
+	padding: 0 .5rem;
+}
+form label.top{
+	display: block;
+	padding-top: 1rem;
+	color: rgb(60, 121, 54);
+	font-size: .8rem;
+}
+form label.top input, form label.top select{
+	-webkit-appearance: none;
+	display: block;
+	font-size: 1rem;
+	border: solid 1px #999;
+	border-radius: 4px;
+	padding: .75rem;
+	color: #555;
+	width: 100%;
+	max-width: 20rem;
+	background-color: rgba(0,0,0,0.1);
+}
+form label.top textarea
+{
+	display: block;
+	font-size: 1rem;
+	border: solid 1px #999;
+	border-radius: 4px;
+	padding: .75rem;
+	font-family: monospace;
+	width: 100%;
+	max-width: 50rem;
+	height: 30rem;
+	max-height: 50rem;
+	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 1rem;
+}
+form input.submitBtn{
+	background: rgba(64, 224, 208, 0.781);
+	border: 1px solid #023047;
+	display: block;
+	font-size: 1.3em;
+	border-radius: .4rem;
+	padding: 20px 28px 20px 28px;
+	margin:  0 0 2rem 2%;
+	width: 96%;
+	max-width: 40rem;
+}
+form label.top input:required{
+	border-left: 6px solid rgb(182, 0, 0);
+}
+form label.top input:required:valid{
+	border-left: 6px solid rgb(60, 121, 54);
+}
+/*****************************************************************/
+table {
+	margin: 10% auto;
+	border: 2px solid black;
+	box-shadow: 0 0 7px lightgreen;
+	border-collapse: collapse;
+	width: 50rem;
+	height: 10rem;
+}
+
+caption {
+	padding: 10px;
+	color: black;
+	font-size: 1rem;
+	caption-side: bottom;
+}
+
+tr:first-child th, .highlight {
+	background-color: darkolivegreen;
+	color: white;
+	font-size: x-large;
+}
+
+th, td {
+	padding: 30px 30px;
+	border: 1px solid darkolivegreen;
+	width: fit-content;
+}
+
+th {
+	background-color: rgb(153, 153, 153);
+	font-size: large;
+}
+
+#first-left {
+	background-color: darkolivegreen;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: gainsboro;
+}
+
+.cross {
+	color: red;
+}
+
+.checkmark {
+	color: green;
+}
