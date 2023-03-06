@@ -132,14 +132,14 @@
         color: black;
     }
     .fa {
-        padding: 12px;
+        padding: 15px;
         font-size: 13px;
         width: 13px;
         height: 10px;
         margin: 1px;
         text-align: center;
         text-decoration: none;
-        border-radius: 50%;
+        border-radius: 5%;
     }
     .icon .fa{
         padding: 3px;
