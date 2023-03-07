@@ -19,7 +19,6 @@ header {
 }
 .cards section {
     border: 8px double white;
-    border-radius: 3%;
     margin: 10px auto;
     padding: 3px;
 }
