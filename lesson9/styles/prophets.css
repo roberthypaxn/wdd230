@@ -1,3 +1,41 @@
-*{
-    color: brown;
+* {
+    text-align: center;
+    font-family:'System UI', monospace;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    background-color: #a8dadc;
+}
+header {
+    color: black;
+    padding: 10px;
+}
+.cards {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+}
+.cards section {
+    border: 8px double white;
+    border-radius: 3%;
+    margin: 10px auto;
+    padding: 3px;
+}
+.cards h2 {
+    color: black;
+    padding: 15px 7px 0;
+}
+.cards img {
+    padding: 10px;
+    width: auto;
+    max-width: 325px;
+}
+.cards p{
+  font-size: 1.5em;
+}
+footer {
+    color: black;
+    padding: 20px;
 }
