@@ -1,0 +1,58 @@
+{
+    "partners" : [
+        {
+            "image":"../images/directory/akagera.png",
+            "address":"Akagera Road",
+            "phone":"+250 787 409 137",
+            "url":"https://www.africanparks.org/the-parks/akagera"
+        },
+        {
+            "image":"../images/directory/akm.png",
+            "address":"KN 3 Rd, Kigali",
+            "phone":"+250 788 170 120",
+            "url":"https://abgafrica.com/akagera-motors/"
+        },
+        {
+            "image":"../images/directory/bk.png",
+            "address":"KN 4 Ave, Kigali",
+            "phone":"+250 788 143 000",
+            "url":"https://bk.rw"
+        },
+        {
+            "image":"../images/directory/lionrecovery.png",
+            "address":"Potrero Hill, San Francisco, CA, USA",
+            "phone":"+1 4152 026 380",
+            "url":"https://lionrecoveryfund.org/"
+        },
+        {
+            "image":"../images/directory/african-park.png",
+            "address":"Johannesburg, South Africa",
+            "phone":"+27 11 465 0050",
+            "url":"https://www.africanparks.org"
+        },
+        {
+            "image":"../images/directory/visit.png",
+            "address":"KG 220 St, Kigali,",
+            "phone":"+250 727 775 170",
+            "url":"https://www.visitrwanda.com/"
+        },
+        {
+            "image":"../images/directory/rwandair.png",
+            "address":"KN 5 Rd, Kigali",
+            "phone":"+250 788 177 000",
+            "url":"http://www.rwandair.com/"
+        },
+        {
+            "image":"../images/directory/wwf.png",
+            "address":"Rue Mauverney 28, 1196 Gland, Switzerland",
+            "phone":"+254 722 203 407",
+            "url":"wwf.org"
+        },
+        {
+            "image":"../images/directory/wcs.png",
+            "address":"44 KG 28 Ave, Kigali",
+            "phone":"0784502002",
+            "url":"http://rwanda.wcs.org/"
+        }
+    ]
+}

@@ -671,3 +671,88 @@ tbody tr:nth-child(even) {
 .checkmark {
 	color: green;
 }
+/****************************************/
+.mainly{
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(127, 199, 20, 0.068);
+}
+.blak-txt{
+	color: #000000;
+	text-align: center;
+}
+.a-txt{
+	color: #328871;
+	text-align: center;
+}
+.partner-box{
+	width: fit-content;
+	padding: 1em;
+	border: 2.5px dashed black;
+	border-radius: 4%;
+	background-color: white;
+}
+.menu {
+	margin: 1rem auto;
+	border: 2px solid black;
+	padding: 0.5rem;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+}
+.menu button {
+	background: rgba(64, 224, 208, 0.781);
+	padding: 0.5rem 1.5em;
+	font-weight: 700;
+	color: black;
+}
+.parteners-grid{
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	width: 100%;
+	max-width: 1280px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.pics{
+	width: 12rem;
+}
+.tabulated{
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	width: 100%;
+	max-width: 1280px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.listed .partner-box{
+	width: 80vh;
+}
+.listed .pics{
+	width: 15%;
+}
+.tabulated .partner-box{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-self: center;
+}
+.listed .partner-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.partner-box > *{
+	margin: 0.1rem;
+}
+.parteners-grid,
+.partner-box {
+	margin: 0.5rem;
+}
+
