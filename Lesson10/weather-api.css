@@ -1,0 +1,26 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+* p{
+    font-size: large;
+}
+html{
+    background-color: #00c090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+}
+body{
+    background-color: #bfd200;
+    width: 60%;
+    height: fit-content;
+    border: 10px double black;
+}
+h1{
+    text-shadow: 2px 2px 4px #2b9348;
+}
+hr{
+    width: 70%;
+}
