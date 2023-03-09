@@ -46,7 +46,7 @@ function displayResults(weatherData) {
     const wChill = weatherData.main.feels_like;
 
     windSpeed.textContent = wSpeed + " Km/h";
-    windChill.textContent = wChill;
+    windChill.textContent = wChill + " °C";
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
