@@ -1,6 +1,6 @@
-let t = 5;
+/*let t = 5;
 let fahrenheit = (t - 32) * (5/9);
-/*const temp = document.querySelector(".temp");
+const temp = document.querySelector(".temp");
 temp.innerHTML =`${t}°C`
 */
 /*let km_h = 4.7;
