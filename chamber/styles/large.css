@@ -189,6 +189,9 @@ button:hover {
 	grid-row: 2/3;
 	grid-column: 1/2;
 }
+#wheather-icon{
+	transform: scale(2);
+}
 .all-icons{
 	padding: 5px;
 	font-size: 5rem;
@@ -201,6 +204,7 @@ button:hover {
 	grid-row: 3/4;
 	grid-column: 1/3;
 	text-align: center;
+	font-size: 1.5rem;
 }
 .wheather-mez{
 	grid-row: 4/5;
