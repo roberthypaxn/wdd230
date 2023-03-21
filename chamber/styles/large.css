@@ -557,9 +557,11 @@ form *, table *{
 	justify-content: space-evenly;
 	align-items: center;
 }
+#form{
+	margin: 0 auto;
+}
 form{
 	width: 40rem;
-	margin: 0 auto;
 }
 form fieldset{
 	margin: 2rem 0;
