@@ -650,6 +650,12 @@ form label.top input:required:valid{
 	width: 100%;
 	max-width: 40rem;
 }
+.contact-section{
+	display: block;
+}
+.contact-img{
+	width: 100%;
+}
 /*****************************************************************/
 table {
 	margin: 10% auto;
