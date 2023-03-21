@@ -16,29 +16,12 @@
     <link rel="stylesheet" href="../styles/large.css">
     <link rel="stylesheet" href="../styles/medium.css">
     <link rel="stylesheet" href="../styles/base.css">
-    <title>Thank You</title>
-    <style>
-        .thankyou *{
-            color: rgb(60, 121, 54);
-            padding: 1em;
-        }
-        .thankyou{
-            height: 30vh;
-            padding: 1em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid rgb(60, 121, 54);
-            border-radius: 4px;
-            margin: 30vh;
-        }
-    </style>
+    <title>Discover</title>
 </head>
 <body>
     <header>
         <a id="logo" href="../index.html">
-              <img id="logo-img" src="../images/logo.webp" loading="eager">
+              <img id="logo-img" src="../images/logo.webp" alt="logo" loading="eager">
         </a>
         
         <aside id="heading">
@@ -51,6 +34,7 @@
         <nav id="navigation">
             
             <ul id="nav-list">
+              <li><a href="../index.html">Home</a></li>
               <li><a href="discover.html">Discover</a></li>
               <li><a href="directory.html">Directory</a></li>
               <li><a href="join.html">Join</a></li>
@@ -66,10 +50,40 @@
         
         <div class="date"></div>
     </header>
-    <div class="thankyou">
-        <h2>Thank you for joining virunga Chamber</h2>
-        <p>We have received your information and will are working on your application</p>
-    </div>
+    <main id="the-main">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Get in touch with Virunga Chamber</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <label class="rdo"><input type="radio" name="Membership" value="">I am not a member</label>
+                    <label class="rdo"><input type="radio" name="Membership" value="">Not a sure</label>
+                    <label class="rdo"><input type="radio" name="Membership" value="">I am a member</label>
+                </fieldset>
+            
+                <label class="top">What questions do you have for Virunga Chamber?<textarea id="questions" name="questions"></textarea></label>
+            </fieldset>
+    
+            <label><input type="submit" value="Send Enquery" class="submitBtn"></label>
+        </form>
+        <section class="contact-section">
+            <div>
+                <h2>Our Address:</h2>
+                <p>KN4 Avenue, Nyarugenge, Kigali - Rwanda</p>
+                <p>Makuza Peace Plaza - 6th Floor</p>
+            </div>
+            <div>
+                <h2>Get in touch:</h2>
+                <p>info@virungachamber.org</p>
+                <p>+250700000000</p>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer-all">
         <a href="../index.html"><img class="footer-img" src="../images/logo.webp" alt="logo" loading="eager"></a>
         <section class="address">
@@ -83,14 +97,15 @@
         </section>
         <p class="copyright">&copy; 2023 Virunga Chamber | Robert Hypax NDIRAMIYE| WDD 230 Project | Last Modified: <span id="date"></span></p>
     </footer>
-    <script src="../scripts/date.js"></script>
- 
-    <script>
-        const navToggle = document.querySelector('.nav_toggle');
+<script src="../scripts/date.js"></script>
+<script src="../scripts/lazyloading_chamber.js"></script>
+<script src="../scripts/directory.js"></script>
+<script>
+    const navToggle = document.querySelector('.nav_toggle');
 
-        navToggle.addEventListener('click', () => {
-        document.body.classList.toggle('nav-open');
-        });
-    </script>
+    navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+    });
+</script>
 </body>
 </html>

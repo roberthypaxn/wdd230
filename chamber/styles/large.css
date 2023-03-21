@@ -581,7 +581,7 @@ form label.top{
 	display: block;
 	padding-top: 1rem;
 	color: rgb(60, 121, 54);
-	font-size: .8rem;
+	font-size: 1rem;
 }
 form label.top input, form label.top select{
 	display: block;
@@ -593,6 +593,10 @@ form label.top input, form label.top select{
 	width: 100%;
 	max-width: 20rem;
 	background-color: rgba(0,0,0,0.1);
+}
+form fieldset label.rdo{
+	display: block;
+	padding: .75rem 0;
 }
 form label.top textarea
 {
@@ -608,6 +612,12 @@ form label.top textarea
 	max-height: 50rem;
 	background-color: rgba(0,0,0,0.1);
 	margin-bottom: 1rem;
+}
+#questions{
+	width: 100%;
+	max-width: 50rem;
+	height: 10rem;
+	max-height: 50rem;
 }
 form input.submitBtn{
 	background: rgba(64, 224, 208, 0.781);
@@ -625,6 +635,18 @@ form label.top input:required{
 }
 form label.top input:required:valid{
 	border-left: 6px solid rgb(60, 121, 54);
+}
+.contact-section *{
+	color: #000000;
+	padding: 1em;
+}
+.contact-section{
+	margin: 2rem 0;
+	border: 2px solid #023047;
+	border-radius: 10px;
+	padding: .5rem 2%;
+	width: 100%;
+	max-width: 40rem;
 }
 /*****************************************************************/
 table {
