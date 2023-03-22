@@ -114,10 +114,10 @@
         gap: 1em;
     }
     #weather{
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         display: grid;
-        height: 70%;
+        height: 100%;
     }
     .sub-heading{
         padding: 1em;
@@ -137,6 +137,9 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+    .footer-all *{
+        text-align: center;
     }
     .footer-img{
         grid-row: 1/2;
