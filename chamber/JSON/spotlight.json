@@ -1,0 +1,25 @@
+{
+    "spotlights" :[
+        {
+            "h2":"Thankful Transport",
+            "icon":"🚁",
+            "phone":"+250700000000",
+            "h3":"Touristic transport with ease!",
+            "url":"virungachamber-networking.xyz"
+        },
+        {
+            "h2":"Web Development For Your Business",
+            "icon":"🖥️",
+            "phone":"+250700000000",
+            "h3":"Learn Web Development for your business.",
+            "url":"virungachamber-networking.xyz"
+        },
+        {
+            "h2":"Networking",
+            "icon":"👥",
+            "phone":"+250700000000",
+            "h3":"A Network of all Sorts of Business People in Our region!",
+            "url":"virungachamber-networking.xyz"
+        }
+    ]
+}

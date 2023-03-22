@@ -240,6 +240,13 @@ button:hover {
 	padding: 2em;
 	text-align: center;
 }
+.small-imgs{
+	
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+	gap: 1em;
+}
 #spotlights{
 	grid-area: spotlight;
 	display: flex;
@@ -247,6 +254,20 @@ button:hover {
 	gap: 1em;
 	padding: 1em;
 	background-color: #023047;
+}
+.little-img{
+	display: block;
+	padding: .4em;
+	border: 2px dashed white;
+	border-radius: 5%;
+	margin: 0;
+}
+.little-img-1{
+	display: block;
+	padding: .4em;
+	border: 2px dashed white;
+	border-radius: 5%;
+	margin: 1em auto;
 }
 .h3{
 	padding: 1em;
@@ -301,12 +322,16 @@ button:hover {
 	margin: 0 auto;
 }
 .footer-img{
-	grid-row: 1/2;
-	grid-column: 1/2;
 	object-fit: contain;
 	margin: 0 auto;
 	width: 50%;
 	height: 50%;
+}
+.footer-icon-img{
+	grid-row: 1/2;
+	grid-column: 1/2;
+	align-self: center;
+	margin: 0 auto;
 }
 /*******************************************************************/
 h1{
@@ -794,3 +819,4 @@ tbody tr:nth-child(even) {
 	margin: 0.5rem;
 }
 
+.footer-img

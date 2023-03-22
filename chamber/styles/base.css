@@ -131,11 +131,12 @@
     #join{
         display: none;
     }
-    footer{
+    .footer-all{
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr 1fr 1fr;
-        justify-content: auto;
+        justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .footer-img{
         grid-row: 1/2;
@@ -162,7 +163,12 @@
         width: 50%;
         height: 50%;
     }
+    /*.footer-all{
+
+    }
     
+    
+    */
     .fa {
         padding: 15px;
         font-size: 13px;
