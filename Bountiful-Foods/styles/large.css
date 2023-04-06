@@ -105,3 +105,9 @@ h1{
     width: 80%;
     margin: 0 auto;
 }
+#w-icon{
+    width: 200px;
+}
+.weather *{
+    border: 2px solid red;
+}
