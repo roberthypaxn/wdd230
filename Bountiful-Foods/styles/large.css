@@ -278,3 +278,13 @@ textarea{
     width: 50%;
     margin: 1em auto;
 }
+#h2-about{
+    text-align: center;
+    padding: 1em;
+}
+.p-about{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}

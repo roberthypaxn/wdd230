@@ -48,6 +48,8 @@ function formSubmitted(whatHappened){
     const firstOption = document.querySelector(".options1").value;
     const secondOption = document.querySelector(".options2").value;
     const thirdOption = document.querySelector(".options3").value;
+    const form = document.getElementById("form");
+    const div = document.getElementById("results");
     
     let email_res= document.getElementById("email-res")
     let phone_res= document.getElementById("phone-res")
@@ -113,6 +115,6 @@ function formSubmitted(whatHappened){
     fat_res.innerHTML = fat;
     sugar_res.innerHTML = sugar;
     cal_res.innerHTML = calories;
-
-
+    form.replaceWith(div);
+    div.style.display = "block";
 }
