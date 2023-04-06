@@ -49,16 +49,19 @@ function displayForecast(weatherData) {
     const date_time = document.createElement("span");
     const clock_time = document.createElement("span");
     const temp_cast = document.createElement("span");
+    const humidity_cast = document.createElement("span");
     const desc_cast = document.createElement("span");
 
     date_time.innerHTML = `Date: ${time[0]}`;
     clock_time.innerHTML = `Time of the day: ${time[1]}`;
     temp_cast.innerHTML = `Temperature: ${weatherData.list[i].main.temp.toFixed(0)}°C`;
+    humidity_cast.innerHTML = `Humidity: ${weatherData.list[i].main.humidity}`;
     desc_cast.innerHTML = weatherData.list[i].weather[0].description;
 
     divContainer.appendChild(date_time);
     divContainer.appendChild(clock_time);
     divContainer.appendChild(temp_cast);
+    divContainer.appendChild(humidity_cast);
     divContainer.appendChild(desc_cast);
 
     divCards.appendChild(divContainer);
