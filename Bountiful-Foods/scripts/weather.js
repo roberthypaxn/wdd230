@@ -45,17 +45,21 @@ function displayForecast(weatherData) {
     
     const divContainer = document.createElement("div");
     divContainer.setAttribute("class", "card-weather");
-    const forecast1 = document.createElement("span");
-    const forecast2 = document.createElement("span");
-    const forecast3 = document.createElement("span");
+    const time = weatherData.list[i].dt_txt.split(" ");
+    const date_time = document.createElement("span");
+    const clock_time = document.createElement("span");
+    const temp_cast = document.createElement("span");
+    const desc_cast = document.createElement("span");
 
-    forecast1.innerHTML = weatherData.list[i].dt_txt;
-    forecast2.innerHTML = `${weatherData.list[i].main.temp.toFixed(0)}°C`;
-    forecast3.innerHTML = weatherData.list[i].weather[0].description;
+    date_time.innerHTML = `Date: ${time[0]}`;
+    clock_time.innerHTML = `Time of the day: ${time[1]}`;
+    temp_cast.innerHTML = `Temperature: ${weatherData.list[i].main.temp.toFixed(0)}°C`;
+    desc_cast.innerHTML = weatherData.list[i].weather[0].description;
 
-    divContainer.appendChild(forecast1);
-    divContainer.appendChild(forecast2);
-    divContainer.appendChild(forecast3);
+    divContainer.appendChild(date_time);
+    divContainer.appendChild(clock_time);
+    divContainer.appendChild(temp_cast);
+    divContainer.appendChild(desc_cast);
 
     divCards.appendChild(divContainer);
   }
