@@ -5,6 +5,10 @@
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
+h2{
+    font-family: 'Pacifico', cursive;
+    color: #26A63F;
+}
 header, footer{
     background: #C9EFC7;
     border: 3px dashed #3E4A3D;
@@ -71,15 +75,15 @@ main{
     border-radius: 20px 20px;
     padding: 1em;
     display: grid;
-    grid-template-rows: 1fr .5fr 1fr;
-    justify-content: center;
+    grid-template-rows: 1fr .5fr .75fr;
+    justify-content: space-evenly;
 }
 .hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr .4fr ;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-gap: 1em;
 }
 h1{
@@ -109,13 +113,14 @@ h1{
     width: 200px;
 }
 .weather{
-    background-color: #97AFB9;
+    background-color: #C9EFC7;
     padding: 2em;
     width: 70%;
-    margin: 0 auto;
+    margin: 1em auto;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
+    border: 2px solid white;
 }
 section h2{
     text-align: center;
@@ -144,7 +149,7 @@ section h2{
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: .25fr 1fr 1fr;
+    grid-template-rows: .15fr 1fr 1fr;
 }
 #weather-cards h4{
     grid-row: 1/2;
@@ -162,4 +167,114 @@ section h2{
     grid-column:1/2 ;
     width: 50%;
     margin: 0 auto;
+}
+.prods{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .25fr .65fr;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.prods h2{
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+.prods div{
+    grid-row: 2/3;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+
+}
+.prods p{
+    height: 10em;
+    text-align: center;
+}
+.order-btn{
+    padding: 20px 40px;
+    font-size: 2em;
+    background-color: #8DD3ED;
+    border: 2px dashed #3E4A3D;
+    border-radius: 10px;
+}
+.order-btn:hover{
+    background-color: #00B0FF;
+}
+
+/************************ Form Styling *************************/
+form{
+    max-width: 60%;
+    margin: 0 auto;
+}
+form fieldset{
+    margin: 2rem 0;
+    border: 2px solid #3E4A3D;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #F1F1E6;
+}
+form legend{
+    color: #26A63F;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.3em;
+    font-family: "Pacifico", cursive;
+}
+
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    color: #fd9b5d;
+    font-size: .8rem;
+}
+form label.top input, select{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #3E4A3D;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.fruit-options{
+    display: flex;
+    justify-content: space-around;
+}
+form input.submitBtn{
+    border: 2px dashed #3E4A3D;
+    background-color: #0064D2;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+.submitBtn:hover{
+    background-color: #00B0FF;
+}
+form label.top input:required{
+    border-left: rgb(185, 80, 80) solid 6px;
+}
+form label.top input:required:valid{
+    border-left: #41A44C solid 6px;
+}
+textarea{
+    min-width: 32rem;
+    min-height: 20rem;
+}
+#results{
+    background-color: #DEF2FF;
+    border: #3E4A3D solid 2px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 1em auto;
 }

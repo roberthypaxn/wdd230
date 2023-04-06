@@ -7,8 +7,12 @@
     <meta name="author" content="Robert Hypax Ndiramiye">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <meta name="description" content="Bountiful Foods Project: Frontend Development I - BYUI">
-    <link rel="icon" href="images/bountiful-foods-low-resolution-logo-black-on-transparent-background.png">
+    <link rel="icon" href="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="stylesheet" href="../styles/large.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -25,29 +29,47 @@
             <a href="#" class="fa fa-facebook"></a>
         </aside>
     </header>
-    <main>
-        <section>
-            <h1>Bountiful Foods</h1>
-            <img src="../images/ibyahishuwe.jpg" alt="hero image">
-            <p>Southern California is home to several coastal areas with a significant presence of organic food producers that we are proud to be a part of. The types of organic crops we grow in the region include avocados, lettuce,Avocado, Berries (strawberries, blueberries, raspberries, blackberries), Citrus fruits (oranges, lemons, limes, grapefruits), Grapes, Leafy greens (lettuce, spinach, kale, arugula), Melons (watermelon, cantaloupe, honeydew), Tomatoes, Carrots, Cucumbers and  Peppers, among others.</p>    
-        </section>
-        <section>
+
+        <form id="form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input id="name" type="text" name="fname" required></label>
+                <label class="top">Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input id="phone" type="tel" name="phone" placeholder="1235551234"></label>
+            </fieldset>
+            <fieldset class="fruit-options">
+                <legend>Build your Own Special Drink</legend>
+                <select name="fruit_options" id="" class="options1">
+                    <option value="">Please Select</option>
+                </select>
+                <select name="fruit_options" id="" class="options2">
+                    <option value="">Please Select</option>
+                </select>
+                <select name="fruit_options" id="" class="options3">
+                    <option value="">Please Select</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label class="top"><p>Do you have any special instructions?</p><textarea id="questions" name="questions"></textarea></label>
+            </fieldset>
+    
+            <label><input type="submit" value="Order My Drink" class="submitBtn"></label>
+        </form>
+        <div id="results" ><!--style="display: none;"-->
+            <h2>Order Succeeded!</h2>
+            <p><b>Client name:</b> <span id="name-res"></span></p>
+            <p><b>Client name:</b> <span id="email-res"></span></p>
+            <p><b>Client phone:</b> <span id="phone-res"></span></p>
+            <p><b>Order date:</b> <span id="date-res"></span></p>
             <div>
-                <h2>Weather</h2>
-                <div>
-                    <img src="../images/ibyahishuwe.jpg" alt="weather icon">
-                    <p>Temperature</p>
-                </div>
-                <p>Weather Description</p>
-                <p>Weather Forecast</p>
+                <h3>Nutritional Information</h3>
+                <p><b>Carbohydrates:</b> <span id="carbs"></span></p>
+                <p><b>Protein:</b> <span id="amino"></span></p>
+                <p><b>Fat:</b> <span id="fat"></span></p>
+                <p><b>Sugar:</b> <span id="sucrose"></span></p>
+                <p><b>Calories:</b> <span id="cal"></span></p>
             </div>
-            <div>
-                <img src="../images/ibyahishuwe.jpg" alt="available product">
-                <img src="../images/ibyahishuwe.jpg" alt="available product">
-                <a href="#"><button>Order Now</button></a>
-            </div>
-        </section>
-    </main>
+        </div>
     <footer>
         <img src="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png" alt="logo">
         <ul>
@@ -57,5 +79,6 @@
             <li><a href="#">Attributes</a></li>
         </ul>
     </footer>
+    <script src="../scripts/fruits.js"></script>
 </body>
 </html>
