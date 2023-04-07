@@ -116,4 +116,12 @@
     h1{
         font-size: 3em;
     }
+    footer img{
+        width: 3em;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
 }
