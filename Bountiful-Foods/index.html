@@ -13,12 +13,13 @@
     <meta name="description" content="Bountiful Foods Project: Frontend Development I - BYUI">
     <link rel="icon" href="images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
     <header>
         <img src="images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png" alt="logo" class="header-logo">
-        <ul>
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="pages/fresh.html">Fresh</a></li>
             <li><a href="pages/about-us.html">About Us</a></li>
@@ -28,6 +29,9 @@
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-facebook"></a>
         </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">&#8801;</span>
+        </button>
     </header>
     <main>
         <section class="hero">
@@ -36,7 +40,7 @@
             <p class="hero-p">Southern California is home to several coastal areas with a significant presence of organic food producers that we are proud to be a part of. The types of organic crops we grow in the region include avocados, lettuce,Avocado, Berries (strawberries, blueberries, raspberries, blackberries), Citrus fruits (oranges, lemons, limes, grapefruits), Grapes, Leafy greens (lettuce, spinach, kale, arugula), Melons (watermelon, cantaloupe, honeydew), Tomatoes, Carrots, Cucumbers and  Peppers, among others.</p>    
         </section>
         <section>
-            <h2>Weather</h2>
+            <h2 class="weather-h2">Weather</h2>
             <div class="weather">
                 <div class="current-weather">
                     <h4>Current Weather Information</h4>
@@ -73,5 +77,6 @@
         </ul>
     </footer>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/hambuger.js"></script>
 </body>
 </html>

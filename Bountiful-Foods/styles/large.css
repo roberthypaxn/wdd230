@@ -200,6 +200,8 @@ section h2{
     background-color: #8DD3ED;
     border: 2px dashed #3E4A3D;
     border-radius: 10px;
+    width: 70%;
+    margin: 0 15%;
 }
 .order-btn:hover{
     background-color: #00B0FF;
@@ -293,4 +295,7 @@ iframe{
     width: 30rem;
     height: 30rem;
     margin: 1em auto;
+}
+.nav_toggle{
+    display: none;
 }

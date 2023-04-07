@@ -13,21 +13,25 @@
     <meta name="description" content="Bountiful Foods Project: Frontend Development I - BYUI">
     <link rel="icon" href="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png">
     <link rel="stylesheet" href="../styles/large.css">
+    <link rel="stylesheet" href="../styles/medium.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
     <header>
-        <img src="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png" alt="logo">
-        <ul>
+        <img src="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png" alt="logo" class="header-logo">
+        <ul class="nav-menu">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="fresh.html">Fresh</a></li>
-            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="../pages/fresh.html">Fresh</a></li>
+            <li><a href="../pages/about-us.html">About Us</a></li>
         </ul>
         <aside>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-facebook"></a>
         </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">&#8801;</span>
+        </button>
     </header>
         <h2 id="h2-about">Abourt Us</h2>
         <p class="p-about">Bountiful Foods is small business specializing in organic, locally grown foods. We are physically located in Carlsbad, California, however, we have many food trucks that cover the coastal area from Los Angeles to San Diego. Our company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. This owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, our food trucks. We deliver and manage orders on the phone and via this website. The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. We support healthy eating, organic bounty, and convenience</p>
@@ -44,5 +48,6 @@
             <li><a href="#">Attributes</a></li>
         </ul>
     </footer>
+    <script src="../scripts/hambuger.js"></script>
 </body>
 </html>

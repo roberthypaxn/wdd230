@@ -13,21 +13,25 @@
     <meta name="description" content="Bountiful Foods Project: Frontend Development I - BYUI">
     <link rel="icon" href="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png">
     <link rel="stylesheet" href="../styles/large.css">
+    <link rel="stylesheet" href="../styles/medium.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
     <header>
-        <img src="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png" alt="logo">
-        <ul>
+        <img src="../images/bountiful-foods-low-resolution-logo-color-on-transparent-background.png" alt="logo" class="header-logo">
+        <ul class="nav-menu">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="fresh.html">Fresh</a></li>
-            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="../pages/fresh.html">Fresh</a></li>
+            <li><a href="../pages/about-us.html">About Us</a></li>
         </ul>
         <aside>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-facebook"></a>
         </aside>
+        <button class="nav_toggle">
+            <span class="hamburger">&#8801;</span>
+        </button>
     </header>
 
         <form id="form">
@@ -80,5 +84,6 @@
         </ul>
     </footer>
     <script src="../scripts/fruits.js"></script>
+    <script src="../scripts/hambuger.js"></script>
 </body>
 </html>

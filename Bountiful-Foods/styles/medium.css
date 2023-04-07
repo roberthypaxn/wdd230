@@ -1,0 +1,119 @@
+@media only screen  and (max-width: 91.25rem){
+    header ul{
+        display: none;
+    }
+    header{
+        position: relative;
+    }
+    .nav_toggle{
+        display: block;
+        background-color: #7E91B3;
+        width: 1.5em;
+        position: absolute;
+        font-size: 2em;
+        right: 1em;
+        top: 1em;
+    }
+    .visible{
+        display: flex;
+        width: 30%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .visible li{
+        width: 90%;
+        text-align: center;
+        padding: .3em;
+    }
+    .visible li:nth-child(2){
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+    aside{
+        padding: 1em;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-evenly;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero *{
+        width: 60%;
+        text-align: center;
+    }
+    .hero h1{
+        width: auto;
+    }
+    .prods{
+        display: flex;
+        flex-direction: column;
+    }
+    .prods p{
+        width: 60%;
+    }
+    .order-btn{
+        width: 100%;
+        margin: 0 auto;
+    }
+    iframe{
+        width: 90%;
+    }
+    form{
+        width: 100%;
+    }
+    fieldset{
+        width: 100%;
+    }
+    textarea{
+        min-width: 100%;
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .visible{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+    .visible li:nth-child(2){
+        border: none;
+    }
+    img{
+        width: 50%;
+        height: auto;
+    }
+    .weather{
+        display: none;
+    }
+    .weather-h2{
+        display: none;
+    }
+    .hero-img{
+        height: auto;
+    }
+    .hero-p{
+        width: 100%;
+        height: auto;
+    }
+    .prods div{
+        width: 100%;
+    }
+    .prods p{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 500.001px){
+    h1{
+        font-size: 3em;
+    }
+}
